@@ -90,6 +90,7 @@
 	BREADCRUMBS
 *************************************** */
 .elgg-breadcrumbs {
+	width:40%; /*añadido*/
 	font-size: 100%;
 	font-weight: normal;
 	line-height: 1.4em;

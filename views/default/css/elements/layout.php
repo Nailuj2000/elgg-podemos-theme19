@@ -21,21 +21,21 @@
 	min-width: 800px;
 }
 .elgg-page-default .elgg-page-header > .elgg-inner {
-	max-width: 990px;
+	max-width: 1290px; /*antes 990*/
 	margin: 0 auto;
 	min-height: 65px;
 }
 .elgg-page-default .elgg-page-navbar > .elgg-inner {
-	max-width: 990px;
+	max-width: 1290px; /*antes 990*/
 	margin: 0 auto;
 	height: auto;
 }
 .elgg-page-default .elgg-page-body > .elgg-inner {
-	max-width: 990px;
+	max-width: 1290px; /*antes 990*/
 	margin: 0 auto;
 }
 .elgg-page-default .elgg-page-footer > .elgg-inner {
-	max-width: 990px;
+	max-width: 1290px; /*antes 990*/
 	margin: 0 auto;
 	padding: 5px 0;
 	border-top: 1px solid #DEDEDE;

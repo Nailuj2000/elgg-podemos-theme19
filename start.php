@@ -39,14 +39,15 @@ function podemos_theme19_init() {
  */
 function podemos_theme19_pagesetup() {
 
-	//DESSOBREESCRIBIMOS LA VISTA search/header DE LA DE page/elements/header 
+	/*
+	//DESXTENDER LA VISTA search/header DE LA DE page/elements/header 
 	//¿QUE ESTARÁ EXTENDIDA POR EL CORE?
 	elgg_unextend_view('page/elements/header', 'search/header');
 	//SOLO SE EXTIENDE A LOS USUARIOS LOGUEADOS.
 	if (elgg_is_logged_in()) {
-		elgg_extend_view('page/elements/sidebar', 'search/header', 0);
+		elgg_extend_view('page/elements/topbar', 'search/header', 0);
 	}
-
+	*/
 	if (elgg_is_logged_in()) {
 
 		elgg_register_menu_item('topbar', array(
