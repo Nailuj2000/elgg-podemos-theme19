@@ -5,16 +5,23 @@
  * @package AalborgTheme
  */
 
+//EJECUCIÓN DEL METODO QUE REGISTRA UN MANEJADOR DE EVENTOS DE ELLG
+//CUANDO SE ACTIVA O SE VUELVEN ACTUALZIAR LA CONFIGURACIÓN SE EJECUTA EL EVENTO INITI 
 elgg_register_event_handler('init','system','podemos_theme19_init');
+// init es el evento y system es el ámbito (allá donde te encuentras).
 
+//DECLARACIÓN DEL METODO A EJECUTAR CUANDO SE EJECUTA EL START.PHP
 function podemos_theme19_init() {
 
-	elgg_register_event_handler('pagesetup', 'system', 'podemos_theme_pagesetup', 1000);
+	//REGISTRO DE UN MANEJADOR DE EVENTOS PAGESETUP
+	elgg_register_event_handler('pagesetup', 'system', 'podemos_theme19_pagesetup', 1000);
+	//Le establecermos una prioridad 1000 que es la maxima.
 
 	// theme specific CSS
+	// sobrescribimos las vistas del core.
 	elgg_extend_view('css/elgg', 'podemos_theme19/css');
 
-	elgg_register_plugin_hook_handler('head', 'page', 'podemos_theme_setuphead');
+	elgg_register_plugin_hook_handler('head', 'page', 'podemos_theme19_setuphead');
 
 	elgg_register_js('respond', 'mod/podemos_theme19/vendors/js/respond.min.js');
 	elgg_load_js('respond');
@@ -28,10 +35,14 @@ function podemos_theme19_init() {
 
 /**
  * Rearrange menu items
+ * Reorganizar los elementos del menu.
  */
-function podemos_theme_pagesetup() {
+function podemos_theme19_pagesetup() {
 
+	//DESSOBREESCRIBIMOS LA VISTA search/header DE LA DE page/elements/header 
+	//¿QUE ESTARÁ EXTENDIDA POR EL CORE?
 	elgg_unextend_view('page/elements/header', 'search/header');
+	//SOLO SE EXTIENDE A LOS USUARIOS LOGUEADOS.
 	if (elgg_is_logged_in()) {
 		elgg_extend_view('page/elements/sidebar', 'search/header', 0);
 	}
@@ -106,7 +117,7 @@ function podemos_theme_pagesetup() {
  * @param array  $data Array of items for head
  * @return array
  */
-function podemos_theme_setuphead($hook, $type, $data) {
+function podemos_theme19_setuphead($hook, $type, $data) {
 	$data['metas'][] = array(
 		'name' => 'viewport',
 		'content' => 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0',

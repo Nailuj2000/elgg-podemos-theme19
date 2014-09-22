@@ -28,7 +28,7 @@ if (elgg_get_context() == 'admin') {
 
 $messages = elgg_view('page/elements/messages', array('object' => $vars['sysmessages']));
 
-$header = elgg_view('page/elements/header', $vars);
+//$header = elgg_view('page/elements/header', $vars);
 $navbar = elgg_view('page/elements/navbar', $vars);
 $content = elgg_view('page/elements/body', $vars);
 $footer = elgg_view('page/elements/footer', $vars);
@@ -52,11 +52,11 @@ if (elgg_is_logged_in()) {
 __BODY;
 }
 $body .= <<<__BODY
-	<div class="elgg-page-header">
+	<!--<div class="elgg-page-header">
 		<div class="elgg-inner">
 			$header
 		</div>
-	</div>
+	</div>-->
 	<div class="elgg-page-navbar">
 		<div class="elgg-inner">
 			$navbar

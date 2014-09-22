@@ -123,7 +123,8 @@
 *************************************** */
 .elgg-menu-topbar {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	float: left;
+	float: right; /*antes left*/
+	margin-right: 10px;
 }
 
 .elgg-menu-topbar > li {
