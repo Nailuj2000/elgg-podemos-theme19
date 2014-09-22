@@ -4,7 +4,8 @@
  * The standard elgg top toolbar
  */
 
-//Mostramos breadcrums de los grupos.
+//MOSTRAR LOS BREADCRUMS DE LOS GRUPOS COMO NAVEGACIÓN.
+//TODO: Hacer que no se muestren los de las otras entidades y algunos detalles.
 echo elgg_view('navigation/breadcrumbs');
 
 // Elgg logo
