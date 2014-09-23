@@ -24,8 +24,13 @@ if (isset($vars['class'])) {
 <div class="<?php echo $class; ?>">
 	<div class="elgg-main elgg-body">
 		<?php
-			echo elgg_extract('nav', $vars, elgg_view('navigation/breadcrumbs'));
+			//MUESTRA LOS BREADCRUMS EN LA PARTE SUPERIOR DEL BODY DE LA PAGINA DEL SITE
+			//echo elgg_extract('nav', $vars, elgg_view('navigation/breadcrumbs'));
 			
+			//MUESTRA EL ICONO Y EL TITULO DEL GRUPO Y EL MENU DE LA ENTIDAD.
+			echo elgg_view('page/elements/owner_block', $vars);
+
+			//MUESTRA EL HEADER DEL LAS PAGINAS (TITULO Y MENUS DE GROUPS)
 			echo elgg_view('page/layouts/elements/header', $vars);
 			
 			// @todo deprecated so remove in Elgg 2.0

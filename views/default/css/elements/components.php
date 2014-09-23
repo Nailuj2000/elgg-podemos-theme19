@@ -108,8 +108,21 @@
 /* ***************************************
 	Owner Block
 *************************************** */
+/*estilos propios*/
+.elgg-owner-block > .elgg-head{
+	width: 25%;
+	float: left;
+}
+
+.elgg-owner-block > .elgg-body{
+	width: 68%;
+	float: right;
+}
+/*fin estilos propios*/
+
 .elgg-owner-block {
-	margin-bottom: 20px;
+	margin-bottom: 5px; /*antes 20*/
+	width: 68%;
 }
 
 /* ***************************************

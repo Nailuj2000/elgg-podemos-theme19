@@ -11,9 +11,6 @@ echo elgg_view_menu('extras', array(
 	'class' => 'elgg-menu-hz',
 ));
 
-//MUESTRA EL ICONO Y EL TITULO DEL GRUPO Y EL MENU DE LA ENTIDAD.
-echo elgg_view('page/elements/owner_block', $vars);
-
 //TODO: hacer que solo se muestren alguna secciones.
 echo elgg_view_menu('page', array('sort_by' => 'name'));
 

@@ -3,6 +3,12 @@
 /* ***************************************
 	Modules
 *************************************** */
+/*estilos propios*/
+.elgg-module.elgg-owner-block{
+	width: 100%;
+}
+/*fin estilos propios*/
+
 .elgg-module {
 	overflow: hidden;
 	margin-bottom: 20px;
