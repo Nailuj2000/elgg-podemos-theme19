@@ -11,9 +11,10 @@ Search plugin
 .elgg-search-header {
 	display: block;
 	position: relative;
-	margin-bottom: 15px;
+	margin-bottom: 0px; /*antes 15*/
 	float:right; /*añadido*/
 	width:200px; /*añadido*/
+	height:5px; /*añadido*/
 }
 .elgg-search input[type=text] {
 	width: 100%;
@@ -25,7 +26,7 @@ Search plugin
 	padding: 5px 0 0;
 }
 .search-heading-category {
-	margin-top: 20px;
+	margin-top: 0px; /*antes 20*/
 	color: #666;
 }
 
