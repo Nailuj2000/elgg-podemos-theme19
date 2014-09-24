@@ -442,14 +442,13 @@
 .elgg-menu-owner-block li {
 	display: inline-block;
 	border-right: 1px solid black;
-
 }
 /*fin estilos propios*/
 
 .elgg-menu-owner-block li a {
 	display: inline-block; /*antes block*/
-	margin: 3px 0 5px 0;
-	padding: 5px; /*antes 2px 4px 2px 0*/
+	margin: 3px 0 0 0; /*antes 3px o 5px 0*/
+	padding: 8px; /*antes 2px 4px 2px 0*/
 	color: #444;
 }
 .elgg-menu-owner-block li a:hover {

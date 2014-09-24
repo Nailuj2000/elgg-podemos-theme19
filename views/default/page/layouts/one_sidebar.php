@@ -38,6 +38,7 @@ if (isset($vars['class'])) {
 				echo $vars['area1'];
 			}
 			if (isset($vars['content'])) {
+				//MUESTRA EL CONTENIDO PRINCIPAL, MAIN DE PAGE.
 				echo $vars['content'];
 			}
 			

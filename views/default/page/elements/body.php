@@ -4,5 +4,5 @@
  *
  * @uses $vars['body'] The HTML of the page body
  */
-// EXTRAEMOS DE $VARS EL CONTENIDO DEL OBJETO BODY Y SE MUESTRA POR PANTALLA
+// MUESTRA TODO EL CONTENEDOR DE DEBAJO DE TOPBAR Y DE HEADER, PAGE.
 echo elgg_extract('body', $vars, '');
