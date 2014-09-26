@@ -19,7 +19,7 @@ function podemos_theme19_init() {
 
 	// theme specific CSS
 	// sobrescribimos las vistas del core.
-	elgg_extend_view('css/elgg', 'podemos_theme19/css');
+	elgg_extend_view('css/elgg', 'aalborg_theme/css');
 
 	elgg_register_plugin_hook_handler('head', 'page', 'podemos_theme19_setuphead');
 

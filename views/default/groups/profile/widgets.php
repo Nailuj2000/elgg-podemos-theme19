@@ -6,6 +6,7 @@
 * @package ElggGroups
 */ 
 	
+//TODO: Encontrar donde se llama a esta vista, para quitar la llamada.
 // tools widget area
 //Área de widgets de los grupos.
 echo '<ul id="groups-tools" class="elgg-gallery elgg-gallery-fluid mtl clearfix">';
