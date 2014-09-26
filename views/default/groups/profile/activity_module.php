@@ -1,6 +1,7 @@
 <?php
 /**
  * Groups latest activity
+ * última actividad de grupos
  *
  * @todo add people joining group to activity
  * 

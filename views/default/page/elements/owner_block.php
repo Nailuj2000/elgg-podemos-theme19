@@ -18,6 +18,7 @@ if ($owner instanceof ElggGroup || $owner instanceof ElggUser) {
 	//MUESTRA EL AVATAR DE ENTIDAD Y EL NOMBRE
 	$header = elgg_view_entity($owner, array('full_view' => false));
 
+	//MUESTRA EL MENU DE ENTIDAD O GRUPO
 	$body = elgg_view_menu('owner_block', array('entity' => $owner));
 
 	//TODO: Encontrar que muestra esta vista.

@@ -1,13 +1,14 @@
 <?php
 /**
 * Profile widgets/tools
+* Herramientas/widgets de los perfiles.
 * 
 * @package ElggGroups
 */ 
 	
 // tools widget area
 //Área de widgets de los grupos.
-/*echo '<ul id="groups-tools" class="elgg-gallery elgg-gallery-fluid mtl clearfix">';
+echo '<ul id="groups-tools" class="elgg-gallery elgg-gallery-fluid mtl clearfix">';
 
 // enable tools to extend this area
 echo elgg_view("groups/tool_latest", $vars);
@@ -21,5 +22,5 @@ if ($right || $left) {
 	echo $right;
 }
 
-echo "</ul>";*/
+echo "</ul>";
 
