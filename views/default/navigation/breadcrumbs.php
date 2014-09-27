@@ -28,7 +28,13 @@ if ($additional_class) {
 	$class = "$class $additional_class";
 }
 
-$inicio = "INICIO";
+//cargamos una imagen u otra dependiendo de si estamo en Index o en un grupo.
+if(count($breadcrumbs)>0){
+	$inicio = "O";
+}else{
+	$inicio = "Comunidad";
+}
+		
 //EL MENU SIEMPRE EXISTE AL MENOS CON UN ELEMENTO INICIO
 echo "<ul class=\"$class\">";
 //CREAMOS UN PRIMER ELEMENTO DEL MENU QUE MOSTRARÁ UNA IMAGEN QUE PUEDE CAMBIAR.
