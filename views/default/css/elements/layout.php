@@ -43,7 +43,7 @@
 
 /***** TOPBAR ******/
 .elgg-page-topbar {
-	background: #424242;
+	background:#352235;  /*antes #424242;*/
 	/*border-top: 1px solid #424242;
 	border-bottom: 1px solid #000000; comentado */
 	padding: 0 20px;

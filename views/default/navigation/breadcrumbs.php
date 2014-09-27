@@ -30,15 +30,23 @@ if ($additional_class) {
 
 //cargamos una imagen u otra dependiendo de si estamo en Index o en un grupo.
 if(count($breadcrumbs)>0){
-	$inicio = "O";
+	$class2="elgg-logo-group";
+	$image="podemos.png";
+
 }else{
-	$inicio = "Comunidad";
+	$class2="elgg-logo";
+	$image="ComunidadPodemos.png";
+
 }
-		
+	
+//FUNCIONA. SE RECOGE LA URL DEL SITIO, NO SU RUTA DENTRO DEL SERVIDOR
+$path_image= elgg_get_site_url()."mod/podemos_theme19/graphics/".$image;
+
 //EL MENU SIEMPRE EXISTE AL MENOS CON UN ELEMENTO INICIO
 echo "<ul class=\"$class\">";
+
 //CREAMOS UN PRIMER ELEMENTO DEL MENU QUE MOSTRARÁ UNA IMAGEN QUE PUEDE CAMBIAR.
-echo "<li>$inicio</li>";
+echo "<li class=\"$class2\"><img src=".$path_image." /></li>";
 
 if (is_array($breadcrumbs) && count($breadcrumbs) > 0) {
 	/*$number_breadcrumbs = count($breadcrumbs);

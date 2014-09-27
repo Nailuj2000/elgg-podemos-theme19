@@ -89,13 +89,14 @@
 /* ***************************************
 	BREADCRUMBS
 *************************************** */
+
 .elgg-breadcrumbs {
 	width:40%; /*añadido*/
 	font-size: 100%;
 	font-weight: normal;
 	line-height: 1.4em;
 	padding: 0 10px 1px 0;
-	color: #BABABA;
+	color: #FFF;
 }
 .elgg-breadcrumbs > li {
 	display: inline-block;
@@ -117,6 +118,12 @@
 	position: relative;
 	top: -1px;
 	left: 0;
+}
+
+/*ESTILO AÑADIDO*/
+.elgg-logo-group img, .elgg-logo img{
+padding-top:4px;
+margin-bottom:-20px;
 }
 
 /* ***************************************
