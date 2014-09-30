@@ -122,8 +122,8 @@
 
 /*ESTILO AÑADIDO*/
 .elgg-logo-group img, .elgg-logo img{
-padding-top:4px;
-margin-bottom:-20px;
+padding-top:0px;
+margin-bottom:-18px;
 }
 
 /* ***************************************
