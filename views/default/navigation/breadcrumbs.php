@@ -39,17 +39,17 @@ if(count($breadcrumbs)>0){
 
 }
 
-$image2="flecha.png";
+//$image2="flecha.png";
 	
 //FUNCIONA. SE RECOGE LA URL DEL SITIO, NO SU RUTA DENTRO DEL SERVIDOR
 $path_image= elgg_get_site_url()."mod/podemos_theme19/graphics/".$image;
-$path_image2= elgg_get_site_url()."mod/podemos_theme19/graphics/".$image2;
+//$path_image2= elgg_get_site_url()."mod/podemos_theme19/graphics/".$image2;
 
 //EL MENU SIEMPRE EXISTE AL MENOS CON UN ELEMENTO INICIO
 echo "<ul class=\"$class\">";
 
 //CREAMOS UN PRIMER ELEMENTO DEL MENU QUE MOSTRARÁ UNA IMAGEN QUE PUEDE CAMBIAR.
-echo "<li class=\"$class2\"><img src=".$path_image." /><img src=".$path_image2." /></li>";
+echo "<li class=\"$class2\"><img src=".$path_image." /><div class='flecha'></div></li>";
 
 if (is_array($breadcrumbs) && count($breadcrumbs) > 0) {
 	/*$number_breadcrumbs = count($breadcrumbs);
@@ -59,13 +59,11 @@ if (is_array($breadcrumbs) && count($breadcrumbs) > 0) {
 			continue;
 		}
 	}*/
+
 	$number_breadcrumbs = count($breadcrumbs);
 	for ($i = 1;$i<$number_breadcrumbs; $i++) {
 		if (!empty($breadcrumbs[$i]['link'])) {
 			$breadcrumb = elgg_view('output/url', array(
-				'href' => $breadcrumbs[$i]['link'],
-				'text' => $breadcrumbs[$i]['title'],
-				'is_trusted' => true,
 			));
 		} else {
 			$breadcrumb = $breadcrumbs[$i]['title'];
@@ -73,4 +71,5 @@ if (is_array($breadcrumbs) && count($breadcrumbs) > 0) {
 		echo "<li>$breadcrumb</li>";
 	}
 }
+
 echo '</ul>';
