@@ -8,12 +8,7 @@
 //TODO: Hacer que no se muestren los de las otras entidades y algunos detalles.
 echo elgg_view('navigation/breadcrumbs');
 
-// Elgg logo
-
-//INCLUIMOS LA VISTA DEL BUSCADOR EN LA TOPBAR
-//Todo: averiguar por qué poniéndola antes, aparece después de la vista del menú topbar
-echo elgg_view('search/header',$vars);
-
+//MOSTRAMOS EL MENU TOPBAR
 echo elgg_view_menu('topbar', array('sort_by' => 'priority', array('elgg-menu-hz')));
 
 // elgg tools menu
