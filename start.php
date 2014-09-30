@@ -34,7 +34,7 @@ function podemos_theme19_init() {
 	//REGISTRAMOS UN NUEVO ELEMENTO EN EL MENU TOPBAR, EL CUAL TIENE DOS SECCIONES: 'default' y 'alt'
 	elgg_register_menu_item('topbar', array(
         'name' => 'search',
-	'priority' => 700,
+	'priority' => 600,
         'text' => "<img src='http://podemos-theme.local/mod/podemos_theme19/graphics/lupa.png'/>",
         'href' => elgg_get_site_url(),
 	'section' => 'alt',

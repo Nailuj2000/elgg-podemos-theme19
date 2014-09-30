@@ -151,8 +151,7 @@ margin-top: -10px;/*¿Por qué hay que subirlo tanto?*/
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	float: right; /*antes left*/
 	margin-right: 10px;
-
-	margin-top:-35px;
+	margin-top:-33px;
 }
 
 .elgg-menu-topbar > li {
@@ -163,7 +162,7 @@ margin-top: -10px;/*¿Por qué hay que subirlo tanto?*/
 .elgg-menu-topbar > li > a {
 	padding-top: 0px; /*antes 5*/
 	color: #EEE;
-	margin: 0 15px;
+	
 }
 
 .elgg-menu-topbar > li > a:hover {
@@ -173,12 +172,12 @@ margin-top: -10px;/*¿Por qué hay que subirlo tanto?*/
 
 .elgg-menu-topbar-alt {
 	float: right;
-	width: 100px; /*añadido*/
+	width: 150px; /*añadido*/
 }
 
 .elgg-menu-topbar .elgg-icon {
 	vertical-align: middle;
-	margin-top: -20px; /*antes -1*/
+	margin-top: -5px; /*antes -1*/
 }
 
 .elgg-menu-topbar > li > a.elgg-topbar-logo {
@@ -187,6 +186,7 @@ margin-top: -10px;/*¿Por qué hay que subirlo tanto?*/
 	width: 38px;
 	height: 20px;
 }
+
 
 .elgg-menu-topbar > li > a.elgg-topbar-avatar {
 	width: 18px;
