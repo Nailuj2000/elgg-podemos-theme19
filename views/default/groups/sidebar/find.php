@@ -10,5 +10,5 @@ $body = elgg_view_form('groups/find', array(
 	'method' => 'get',
 	'disable_security' => true,
 ));
-
+//MUESTRA EL BUSCADOR DE GRUPO POR TAGS
 echo elgg_view_module('aside', elgg_echo('groups:searchtag'), $body);
