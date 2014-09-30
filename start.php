@@ -31,6 +31,18 @@ function podemos_theme19_init() {
 		elgg_unregister_plugin_hook_handler('output:before', 'layout', 'elgg_views_add_rss_link');
 	}
 
+	//REGISTRAMOS UN NUEVO ELEMENTO EN EL MENU TOPBAR, EL CUAL TIENE DOS SECCIONES: 'default' y 'alt'
+	elgg_register_menu_item('topbar', array(
+        'name' => 'search',
+	'priority' => 700,
+        'text' => "<img src='http://podemos-theme.local/mod/podemos_theme19/graphics/lupa.png'/>",
+        'href' => elgg_get_site_url(),
+	'section' => 'alt',
+	));
+
+	//RECOGEMOS EL ITEM DEL MENU COMO UN OBJETO
+	$item = elgg_get_menu_item('topbar', 'search');
+
 }
 
 /**
