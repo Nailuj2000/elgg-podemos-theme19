@@ -101,9 +101,9 @@
 .elgg-breadcrumbs > li {
 	display: inline-block;
 	/*ESTILOS AÑADIDOS*/
-	padding-top:10px;
 	height:35px;
 }
+
 .elgg-breadcrumbs > li:after {
 	/*content: "\003E"; //ESTILO COMENTADO*/
 	padding: 0 4px;
@@ -123,15 +123,14 @@
 	left: 0;
 }
 
-/*ESTILO AÑADIDO*/
+/*ESTILOS AÑADIDOS*/
 .elgg-breadcrumbs{
 	height:45px;
+	margin-bottom:-10px;
 }
 
-/*ESTILOS AÑADIDOS*/
 .elgg-logo-group img, .elgg-logo img{
 margin-bottom:-20px; /*¿Por qué hay que bajarlo tanto?*/
-margin-top: -20px;/*¿Por qué hay que subirlo tanto?*/
 }
 
 .flecha{
@@ -141,7 +140,6 @@ height:0;
 border-color:transparent transparent transparent #322032;
 border-style:solid;
 border-width:22px;
-margin-top: -10px;/*¿Por qué hay que subirlo tanto?*/
 }
 
 /* ***************************************
@@ -151,12 +149,13 @@ margin-top: -10px;/*¿Por qué hay que subirlo tanto?*/
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	float: right; /*antes left*/
 	margin-right: 10px;
-	margin-top:-33px;
+	margin-top:-23px;
 }
 
 .elgg-menu-topbar > li {
 	float: left;
 	height: 33px;
+	margin-left:10px;
 }
 
 .elgg-menu-topbar > li > a {
@@ -170,10 +169,10 @@ margin-top: -10px;/*¿Por qué hay que subirlo tanto?*/
 	text-decoration: none;
 }
 
-.elgg-menu-topbar-alt {
+/*.elgg-menu-topbar-alt {
 	float: right;
 	width: 150px; /*añadido*/
-}
+}*/
 
 .elgg-menu-topbar .elgg-icon {
 	vertical-align: middle;
