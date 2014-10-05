@@ -21,21 +21,21 @@
 	min-width: 800px;
 }
 .elgg-page-default .elgg-page-header > .elgg-inner {
-	max-width: 1290px; /*antes 990*/
+	/*max-width: 1290px; /*antes 990*/
 	margin: 0 auto;
 	min-height: 65px;
 }
 .elgg-page-default .elgg-page-navbar > .elgg-inner {
-	max-width: 1290px; /*antes 990*/
+	/*max-width: 1290px; /*antes 990*/
 	margin: 0 auto;
 	height: auto;
 }
 .elgg-page-default .elgg-page-body > .elgg-inner {
-	max-width: 1290px; /*antes 990*/
+	/*max-width: 1290px; /*antes 990*/
 	margin: 0 auto;
 }
 .elgg-page-default .elgg-page-footer > .elgg-inner {
-	max-width: 1290px; /*antes 990*/
+	/*max-width: 1290px; /*antes 990*/
 	margin: 0 auto;
 	padding: 5px 0;
 	border-top: 1px solid #DEDEDE;
@@ -46,7 +46,7 @@
 	background:#612d62; /*antes #352235; y antes #424242;*/
 	/*border-top: 1px solid #424242;
 	border-bottom: 1px solid #000000; comentado */
-	padding: 0 20px;
+	padding: 0px; /*antes 0 20px;*/
 	position: relative;
 	height: 45px; /*antes 32*/
 	z-index: 9000;
@@ -88,7 +88,7 @@
 
 /***** PAGE BODY LAYOUT ******/
 .elgg-page-body {
-	padding: 0 20px;
+	padding: 0px;
 }
 
 .elgg-layout {
@@ -99,11 +99,12 @@
 }
 .elgg-sidebar {
 	position: relative;
-	padding: 32px 0 20px 30px;
-	float: right;
-	width: 21.212121%;
-	margin: 0;
-	border-left: 1px solid #EBEBEB;
+	padding: 45px 0 20px 30px; /*antes 32px 0 20px 30px;*/
+	float: left; /*antes right;*/
+	width: 21.35%; /*antes 21.212121%;*/
+	margin: -1px 0 0 0px; /*antes 0;*/
+	/*border-left: 1px solid #EBEBEB;*/
+	background-color:#272727;/*estilo añadido*/
 }
 .elgg-sidebar-alt {
 	position: relative;
@@ -111,21 +112,22 @@
 	float: left;
 	width: 16.161616%;
 	margin: 0 30px 0 0;
-	border-right: 1px solid #EBEBEB;
+	
 }
 .elgg-main {
 	position: relative;
 	min-height: 360px;
-	padding: 0px 0 10px 0; /*antes 12px 0 10px 0*/
+	padding: 0px 0 0px 0; /*antes 12px 0 10px 0*/
 }
 .elgg-main > .elgg-head {
 	padding-bottom: 5px;
 	border-bottom: 1px solid #EBEBEB;
 	margin-bottom: 10px;
+
 }
 .elgg-layout-one-sidebar .elgg-main {
 	float: left;
-	width: 72.525252%;
+	width: 76.4% /*antes 72.525252%;*/
 }
 .elgg-layout-two-sidebar .elgg-main {
 	float: left;

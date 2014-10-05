@@ -41,7 +41,7 @@ function podemos_theme19_init() {
 	));
 
 	//RECOGEMOS EL ITEM DEL MENU COMO UN OBJETO
-	$item = elgg_get_menu_item('topbar', 'search');
+	//$item = elgg_get_menu_item('topbar', 'search');
 
 }
 
