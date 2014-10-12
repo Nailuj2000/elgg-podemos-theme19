@@ -118,13 +118,20 @@
 	position: relative;
 	min-height: 360px;
 	padding: 0px 0 0px 0; /*antes 12px 0 10px 0*/
+	background-color:#414141;
+	color:#969696;
 }
 .elgg-main > .elgg-head {
 	padding-bottom: 5px;
 	border-bottom: 1px solid #EBEBEB;
 	margin-bottom: 10px;
-
 }
+
+.elgg-layout-one-sidebar{
+	/*ESTILO AÑADIDO*/
+	background-color:#272727;
+}
+
 .elgg-layout-one-sidebar .elgg-main {
 	float: left;
 	width: 76.4% /*antes 72.525252%;*/

@@ -102,6 +102,7 @@
 	display: inline-block;
 	/*ESTILOS AÑADIDOS*/
 	height:35px;
+	/*ESTILOS AÑADIDOS*/
 }
 
 .elgg-breadcrumbs > li:after {
@@ -133,14 +134,45 @@
 margin-bottom:-20px; /*¿Por qué hay que bajarlo tanto?*/
 }
 
-.flecha{
-float:right;
+.elgg-breadcrumbs > li .flecha{
+position:relative;
 width:0;
 height:0;
 border-color:transparent transparent transparent #322032;
 border-style:solid;
-border-width:22px;
+border-width:23px;
 }
+
+.elgg-breadcrumbs > li .flecha_reves{
+position:relative;
+width:0;
+height:0;
+border-color:#322032 #322032 #322032 transparent;
+border-style:solid;
+border-width:23px;
+z-index:-1;
+}
+
+.elgg-breadcrumbs > li div{
+display:inline;
+float:left;
+}
+
+.elgg-breadcrumbs > li .contenido_item1{
+height:35px;
+padding-top:10px;
+background-color:#322032;
+padding-left:10px;
+}
+
+.elgg-breadcrumbs > li .contenido{
+height:35px;
+padding-top:10px;
+background-color:#322032;
+margin-left:-7px;
+}
+
+
 
 /* ***************************************
 	TOPBAR MENU

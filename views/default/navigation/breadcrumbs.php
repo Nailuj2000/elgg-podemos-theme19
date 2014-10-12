@@ -49,7 +49,9 @@ $path_image= elgg_get_site_url()."mod/podemos_theme19/graphics/".$image;
 echo "<ul class=\"$class\">";
 
 //CREAMOS UN PRIMER ELEMENTO DEL MENU QUE MOSTRARÁ UNA IMAGEN QUE PUEDE CAMBIAR.
-echo "<li class=\"$class2\"><img src=".$path_image." /><div class='flecha'></div></li>";
+echo "<li class=\"$class2\"><div class='contenido_item1'>logo</div><div class='flecha'></div></li>";
+
+//<img src=".$path_image." />
 
 if (is_array($breadcrumbs) && count($breadcrumbs) > 0) {
 	/*$number_breadcrumbs = count($breadcrumbs);
@@ -68,7 +70,7 @@ if (is_array($breadcrumbs) && count($breadcrumbs) > 0) {
 		} else {
 			$breadcrumb = $breadcrumbs[$i]['title'];
 		}
-		echo "<li>$breadcrumb</li>";
+		echo "<li><div class='flecha_reves'></div><div class='contenido'>$breadcrumb</div><div class='flecha'></div></li>";
 	}
 }
 

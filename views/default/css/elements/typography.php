@@ -101,6 +101,8 @@ h6 { font-size: 0.8em; }
 	display: inline-block;
 	padding-top: 15px;
 	margin-right: 10px;
+	/*ESTILO AÑADIDO*/
+	color:#969696;
 }
 .elgg-heading-basic {
 	color: #0054A7;
