@@ -115,6 +115,9 @@ h6 { font-size: 0.8em; }
 	font-size: 85%;
 	line-height: 1.4em;
 	font-style: italic;
+	/*ESTILOS PROPIOS*/
+	margin-top: -15px;
+	display:none;
 }
 
 .elgg-text-help {
