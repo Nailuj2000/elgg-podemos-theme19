@@ -39,7 +39,7 @@
 	position: absolute;
 	display: none;
 	background-color: #FFF;
-	border: 1px solid #DEDEDE;
+	/* border: 1px solid #DEDEDE;*/
 	text-align: left;
 	top: 33px;
 	margin-left: -100px;
@@ -48,18 +48,22 @@
 	border-radius: 0 0 3px 3px;
 	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.25);
 }
+
 .elgg-menu-topbar-alt li ul > li > a {
 	text-decoration: none;
 	padding: 10px 20px;
-	background-color: #FFF;
-	color: #444;
+	background-color: #363636; /* antes #FFF; */
+	color: #969696; /* antes #444; */
+	margin-bottom:1px; /*ESTILO AÑADIDO*/
 }
 .elgg-menu-topbar-alt li ul > li > a:hover {
-	background-color: #F0F0F0;
-	color: #444;
+	background-color: #21427a; /* antes #F0F0F0;*/
+	color: #fff; /*antes #444;*/
 }
 .elgg-menu-topbar-alt > li:hover > ul {
 	display: block;
+	/*ESTIL AÑADIDO*/
+	background-color:#272727;
 }
 .elgg-menu-item-account > a:after {
 	content: "\bb";
