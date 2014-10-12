@@ -101,8 +101,8 @@
 .elgg-breadcrumbs > li {
 	display: inline-block;
 	/*ESTILOS AÑADIDOS*/
-	height:35px;
-	/*ESTILOS AÑADIDOS*/
+	height:45px;
+	margin-right:-35px;
 }
 
 .elgg-breadcrumbs > li:after {
@@ -369,6 +369,7 @@ margin-left:-7px;
 .elgg-menu-page .elgg-child-menu {
 	display: none;
 	margin-left: 15px;
+	background:#333;
 }
 .elgg-menu-page .elgg-state-selected > .elgg-child-menu {
 	display: block;
