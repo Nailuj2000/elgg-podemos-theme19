@@ -69,7 +69,7 @@ $body .= <<<__BODY
 	</div>
 	<div class="elgg-page-footer">
 		<div class="elgg-inner">
-			$footer
+			Powered by Podemos <!-- antes estaba el $footer -->
 		</div>
 	</div>
 </div>

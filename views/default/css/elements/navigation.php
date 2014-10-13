@@ -502,10 +502,13 @@ margin-left:-7px;
 /*estilos propios*/
 
 .elgg-main .elgg-module{
-	background-color:#272727;
+	/*background-color:#272727;*/
 	width:131%;
 	z-index:9000;
-	
+}
+
+.elgg-owner-block{
+	background-color:#272727;
 }
 
 .elgg-menu-owner-block li {

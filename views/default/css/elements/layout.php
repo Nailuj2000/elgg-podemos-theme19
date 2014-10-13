@@ -38,7 +38,9 @@
 	/*max-width: 1290px; /*antes 990*/
 	margin: 0 auto;
 	padding: 5px 0;
-	border-top: 1px solid #DEDEDE;
+	/*border-top: 1px solid #DEDEDE;*/
+	/*ESTILO AÑADIDO*/
+	background-color:#000;
 }
 
 /***** TOPBAR ******/
@@ -144,10 +146,12 @@
 /***** PAGE FOOTER ******/
 .elgg-page-footer {
 	color: #999;
-	padding: 0 10px;
+	/*padding: 0 10px;*/
 	position: relative;
+	text-decoration:none;
+	
 }
 
 .elgg-page-footer a:hover {
-	color: #666;
+	color: #fff;
 }
