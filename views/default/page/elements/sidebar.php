@@ -6,10 +6,11 @@
  * @uses $vars['sidebar'] Optional content that is displayed at the bottom of sidebar
  */
 
-echo elgg_view_menu('extras', array(
+/*MENU EXTRAS DE MOMENTO COMENTADO*/
+/*echo elgg_view_menu('extras', array(
 	'sort_by' => 'priority',
 	'class' => 'elgg-menu-hz',
-));
+));*/
 
 //TODO: hacer que solo se muestren alguna secciones.
 echo elgg_view_menu('page', array('sort_by' => 'name'));

@@ -165,6 +165,10 @@ background-color:#322032;
 padding-left:10px;
 }
 
+.elgg-breadcrumbs > li .contenido_item1 img{
+margin-top:-10px;
+}
+
 .elgg-breadcrumbs > li .contenido{
 height:35px;
 padding-top:10px;

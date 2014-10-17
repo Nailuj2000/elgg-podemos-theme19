@@ -49,7 +49,7 @@ $path_image= elgg_get_site_url()."mod/podemos_theme19/graphics/".$image;
 echo "<ul class=\"$class\">";
 
 //CREAMOS UN PRIMER ELEMENTO DEL MENU QUE MOSTRARÁ UNA IMAGEN QUE PUEDE CAMBIAR.
-echo "<li class=\"$class2\"><div class='contenido_item1'>logo</div><div class='flecha'></div></li>";
+echo "<li class=\"$class2\"><div class='contenido_item1'><img src='http://podemos-theme.local/mod/podemos_theme19/graphics/$image'/></div><div class='flecha'></div></li>";
 
 //<img src=".$path_image." />
 

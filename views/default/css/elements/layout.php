@@ -103,7 +103,7 @@
 	position: relative;
 	padding: 45px 0 20px 30px; /*antes 32px 0 20px 30px;*/
 	float: left; /*antes right;*/
-	width: 21.35%; /*antes 21.212121%;*/
+	width: 21%; /*antes 21.212121%;*/
 	margin: -1px 0 0 0px; /*antes 0;*/
 	/*border-left: 1px solid #EBEBEB;*/
 	background-color:#272727;/*estilo añadido*/
