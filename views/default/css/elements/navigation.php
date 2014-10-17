@@ -185,7 +185,7 @@ margin-left:-7px;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	float: right; /*antes left*/
 	margin-right: 10px;
-	margin-top:-23px;
+	margin-top:-25px;
 	/*ESTILO AÑADIDO*/
 	padding:0px;
 }
