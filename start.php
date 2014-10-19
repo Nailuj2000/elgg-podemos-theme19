@@ -35,7 +35,7 @@ function podemos_theme19_init() {
 	elgg_register_menu_item('topbar', array(
         'name' => 'search',
 	'priority' => 600,
-        'text' => "<img src='http://podemos-theme.local/mod/podemos_theme19/graphics/lupa.png'/>",
+        'text' => "<img src='".elgg_get_site_url()."/mod/podemos_theme19/graphics/lupa.png'/>",
         'href' => "#",
 	'section' => 'alt',
 	));
@@ -65,7 +65,7 @@ function podemos_theme19_pagesetup() {
 		/*CAMBIAMOS EL TEXTO (TEXT) POR UNA IMAGEN (antes elgg_echo('account'))*/
 		elgg_register_menu_item('topbar', array(
 			'name' => 'account',
-			'text' => "<img src='http://podemos-theme.local/mod/podemos_theme19/graphics/cuenta.png'/>",
+			'text' => "<img src='".elgg_get_site_url()."/mod/podemos_theme19/graphics/cuenta.png'/>",
 			'href' => "#",
 			'priority' => 100,
 			'section' => 'alt',
