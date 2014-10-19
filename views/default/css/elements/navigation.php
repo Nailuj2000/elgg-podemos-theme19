@@ -524,7 +524,7 @@ margin-left:-7px;
 }
 
 .elgg-owner-block{
-	background-color:#999;
+	background-color:#272727;
 }
 
 .elgg-menu-owner-block li {
