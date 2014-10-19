@@ -8,6 +8,14 @@
 ?>
 /* <style> /**/
 
+/*ESTILO AÑADIDO TIPOGRAFIA PODEMOS*/
+@font-face {
+font-family: "podemos";
+font-style: normal;
+font-weight: normal;
+src: url(<?php echo elgg_get_site_url(); ?>"mod/podemos_theme19/fonts/podemos.ttf") format('truetype');
+}
+
 /* ***************************************
 	PAGINATION
 *************************************** */
@@ -97,12 +105,15 @@
 	line-height: 1.4em;
 	padding: 0 0px 1px 0; /*antes 0 10px 1px 0;*/
 	color: #FFF;
+	font-family:podemos;/*ESTILO AÑADIDO*/
+	
 }
 .elgg-breadcrumbs > li {
 	display: inline-block;
 	/*ESTILOS AÑADIDOS*/
 	height:45px;
 	margin-right:-35px;
+	overflow:hidden;
 }
 
 .elgg-breadcrumbs > li:after {
@@ -188,6 +199,7 @@ margin-left:-7px;
 	margin-top:-25px;
 	/*ESTILO AÑADIDO*/
 	padding:0px;
+	font-family:podemos;/*ESTILO AÑADIDO*/
 }
 
 .elgg-menu-topbar > li {
@@ -508,11 +520,11 @@ margin-left:-7px;
 .elgg-main .elgg-module{
 	/*background-color:#272727;*/
 	width:131%;
-	z-index:9000;
+	font-family:podemos;/*ESTILO AÑADIDO*/
 }
 
 .elgg-owner-block{
-	background-color:#272727;
+	background-color:#999;
 }
 
 .elgg-menu-owner-block li {

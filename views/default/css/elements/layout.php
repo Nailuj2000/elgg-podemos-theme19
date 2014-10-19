@@ -51,7 +51,7 @@
 	padding: 0px; /*antes 0 20px;*/
 	position: relative;
 	height: 45px; /*antes 32*/
-	z-index: 9000;
+	z-index: 1;
 }
 
 /***** PAGE MESSAGES ******/
