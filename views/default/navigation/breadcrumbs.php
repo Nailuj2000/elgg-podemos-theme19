@@ -64,12 +64,17 @@ if (is_array($breadcrumbs) && count($breadcrumbs) > 0) {
 
 	$number_breadcrumbs = count($breadcrumbs);
 	for ($i = 1;$i<$number_breadcrumbs; $i++) {
-		if (!empty($breadcrumbs[$i]['link'])) {
+
+		/*if (!empty($breadcrumbs[$i]['link'])) {
 			$breadcrumb = elgg_view('output/url', array(
 			));
 		} else {
 			$breadcrumb = $breadcrumbs[$i]['title'];
-		}
+		}*/
+		
+		//SE VAN A MOSTRAR TODAS Y CADA UNA DE LAS BREADCRUMBS
+		$breadcrumb = $breadcrumbs[$i]['title'];
+
 		echo "<li><div class='flecha_reves'></div><div class='contenido'>$breadcrumb</div><div class='flecha'></div></li>";
 	}
 }
