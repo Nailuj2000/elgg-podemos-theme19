@@ -181,8 +181,8 @@ margin-top:-10px;
 }
 
 .elgg-breadcrumbs > li .contenido{
-height:35px;
-padding-top:10px;
+height:33px;
+padding-top:12px;
 background-color:#322032;
 margin-left:-7px;
 }

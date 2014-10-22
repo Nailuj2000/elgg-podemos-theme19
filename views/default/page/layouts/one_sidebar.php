@@ -52,6 +52,16 @@ if (isset($vars['class'])) {
 			// On smaller screens, blocks are stacked in left to right order: content, sidebar.
 			//CARGA LA VISTA DE ELEMENTOS DE LA SIDEBAR Y LA MUESTRA.
 			//echo elgg_view('page/elements/sidebar', $vars); // COMENTADO CONTENIDO DEL DIV ELGG SIDEBAR
+
+			//SE RECOGE EN UNA VARIABLE LOS GRUPOS RELACIONADOS CON EL USUARIO LOGUEADO Y SE MUESTRAN EN LA SIDEBAR
+			$groups = elgg_get_entities_from_relationship(array('relationship'=> 'member', 'relationship_guid'=> $owner->guid, 'inverse_relationship'=> FALSE, 'type'=> 'group', 'limit'=> 5));
+
+			//SE CREA UN ENLACE A CADA UNO DE LOS GRUPOS RELACIONADOS CON EL USUARIO LOGUEADO
+			foreach ($groups as $group){
+				$enlace=elgg_get_site_url()."/groups/profile/".$group['guid']."/".$group['name'];
+				echo "<a href={$enlace}>".$group['name']."</a><br />";
+				}
+
 		?>
 	</div>
 </div>

@@ -21,11 +21,40 @@ if ($owner instanceof ElggGroup || $owner instanceof ElggUser) {
 	elgg_unregister_plugin_hook_handler('register', 'menu:owner_block', 'bookmarks_owner_block_menu');
 	elgg_unregister_plugin_hook_handler('register', 'menu:owner_block', 'file_owner_block_menu');
 
+	//REGISTRAMOS CUATRO NUEVOS ELEMENTOS EN EL MENU OWNER BLOCK, QUE SE LLAMARAN Dashboard, Debatir, Decidir E Informarme
+	elgg_register_menu_item('owner_block', array(
+        'name' => 'dashboard',
+	'priority' => '101',
+        'text' => "Dashboard",
+        'href' => elgg_get_site_url()."dashboard",
+	));
+
+	elgg_register_menu_item('owner_block', array(
+        'name' => 'debatir',
+	'priority' => '102',
+        'text' => "Debatir",
+        'href' => elgg_get_site_url()."debatir",
+	));
+
+	elgg_register_menu_item('owner_block', array(
+        'name' => 'decidir',
+	'priority' => '103',
+        'text' => "Decidir",
+        'href' => elgg_get_site_url()."decidir",
+	));
+
+	elgg_register_menu_item('owner_block', array(
+        'name' => 'informarme',
+	'priority' => 104,
+        'text' => "Informarme",
+        'href' => elgg_get_site_url()."informarme",
+	));
+
 	//MUESTRA EL AVATAR DE ENTIDAD Y EL NOMBRE
 	$header = elgg_view_entity($owner, array('full_view' => false));
 
-	//MUESTRA EL MENU DE ENTIDAD O GRUPO
-	$body = elgg_view_menu('owner_block', array('entity' => $owner));
+	//MUESTRA EL MENU DE ENTIDAD O GRUPO, FILTRADO POR PRIORIDAD
+	$body = elgg_view_menu('owner_block', array('entity' => $owner,'sort_by' => 'priority'));
 
 	//TODO: Encontrar que muestra esta vista.
 	$body .= elgg_view('page/elements/owner_block/extend', $vars);
