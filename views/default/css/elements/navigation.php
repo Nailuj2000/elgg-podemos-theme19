@@ -10,10 +10,10 @@
 
 /*ESTILO AÑADIDO TIPOGRAFIA PODEMOS*/
 @font-face {
-font-family: "podemos";
+font-family: "Gotham Medium Regular";
 font-style: normal;
 font-weight: normal;
-src: url(<?php echo elgg_get_site_url(); ?>"mod/podemos_theme19/fonts/podemos.ttf") format('truetype');
+src: url(<?php echo elgg_get_site_url(); ?>"mod/podemos_theme19/fonts/gotham-medium.ttf") format('truetype');
 }
 
 /* ***************************************
@@ -105,7 +105,7 @@ src: url(<?php echo elgg_get_site_url(); ?>"mod/podemos_theme19/fonts/podemos.tt
 	line-height: 1.4em;
 	padding: 0 0px 1px 0; /*antes 0 10px 1px 0;*/
 	color: #FFF;
-	font-family:podemos;/*ESTILO AÑADIDO*/
+	font-family: "Gotham Medium Regular";/*ESTILO AÑADIDO*/
 	
 }
 .elgg-breadcrumbs > li {
@@ -142,7 +142,7 @@ src: url(<?php echo elgg_get_site_url(); ?>"mod/podemos_theme19/fonts/podemos.tt
 }
 
 .elgg-logo-group img, .elgg-logo img{
-margin-bottom:-20px; /*¿Por qué hay que bajarlo tanto?*/
+margin-bottom:-22px; /*¿Por qué hay que bajarlo tanto?*/
 }
 
 .elgg-breadcrumbs > li .flecha{
@@ -199,7 +199,7 @@ margin-left:-7px;
 	margin-top:-25px;
 	/*ESTILO AÑADIDO*/
 	padding:0px;
-	font-family:podemos;/*ESTILO AÑADIDO*/
+	font-family: "Gotham Medium";/*ESTILO AÑADIDO*/
 }
 
 .elgg-menu-topbar > li {
@@ -219,7 +219,7 @@ margin-left:-7px;
 	text-decoration: none;
 }
 
-/*.elgg-menu-topbar-alt {
+/*.elgg-menu-topbar-default {
 	float: right;
 	width: 150px; /*añadido*/
 }*/
@@ -306,7 +306,7 @@ margin-left:-7px;
 	width: 182px;
 }
 .elgg-more > a:after {
-	content: "\bb";
+	/*content: "\bb";*/ /*ESTILO COMENTADO*/
 	margin-left: 6px;
 }
 /* ***************************************
@@ -520,7 +520,7 @@ margin-left:-7px;
 .elgg-main .elgg-module{
 	/*background-color:#272727;*/
 	width:131%;
-	font-family:podemos;/*ESTILO AÑADIDO*/
+	font-family: "Gotham Medium";/*ESTILO AÑADIDO*/
 }
 
 .elgg-owner-block{

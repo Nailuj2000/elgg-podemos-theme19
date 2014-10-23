@@ -66,7 +66,7 @@
 	background-color:#272727;
 }
 .elgg-menu-item-account > a:after {
-	content: "\bb";
+	/*content: "\bb";*/ /*ESTILO COMENTADO*/
 	margin-left: 6px;
 }
 /* ***************************************
