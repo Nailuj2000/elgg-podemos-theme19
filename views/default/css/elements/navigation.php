@@ -529,18 +529,20 @@ margin-left:-7px;
 
 .elgg-owner-block{
 	background-color:#272727;
+	height:50px;
 }
 
 .elgg-menu-owner-block li {
 	display: inline-block;
 	border-right: 1px solid black;
+	height:45px;
 }
 /*fin estilos propios*/
 
 .elgg-menu-owner-block li a {
 	display: inline-block; /*antes block*/
 	/*margin: 3px 0 0 0; /*antes 3px o 5px 0*/
-	padding: 8px; /*antes 2px 4px 2px 0*/
+	padding: 12px 8px; /*antes 2px 4px 2px 0*/
 	color: #7c7c7c; /* antes #444; */
 	/*ESTILO AÑADIDO*/
 	text-decoration:none;

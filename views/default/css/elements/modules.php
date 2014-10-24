@@ -6,7 +6,7 @@
 /*estilos propios*/
 .elgg-module.elgg-owner-block{
 	width: 100%;
-	height:35px;
+	height:44px;
 }
 /*fin estilos propios*/
 

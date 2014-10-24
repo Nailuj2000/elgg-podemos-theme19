@@ -42,69 +42,6 @@ function podemos_theme19_init() {
 	//RECOGEMOS EL ITEM DEL MENU COMO UN OBJETO
 	//$item = elgg_get_menu_item('topbar', 'search');
 
-	//DECLARACION DE LOS MANEJADORES DE CUATRO PAGINAS NUEVAS, dashboard, decidir, debatir, informarme
-	elgg_register_page_handler("dashboard","dashboard_page_handler");
-	elgg_register_page_handler("decidir","decidir_page_handler");
-	elgg_register_page_handler("debatir","debatir_page_handler");
-	elgg_register_page_handler("informarme","informarme_page_handler");
-
-}
-
-//CONJUNTO DE FUNCIONES CALLBACK LAS CUALES GENERARAN CADA PAGINA DE  dashboard, decidir, debatir, informarme
-function dashboard_page_handler() {
-
-	$params = array(
-        'title' => 'Dashboard',
-        'content' => 'El Dashboard del usuario actual dentro del grupo',
-        'filter' => '',
-    	);
-
-    	$body = elgg_view_layout('content', $params);
-
-    	echo elgg_view_page('Dashboard', $body);
-
-}
-
-function decidir_page_handler() {
-
-	$params = array(
-        'title' => 'Decidir',
-        'content' => 'La zona de debate del grupo, para este usuario',
-        'filter' => '',
-    	);
-
-    	$body = elgg_view_layout('content', $params);
-
-    	echo elgg_view_page('Decidir', $body);
-
-}
-
-function debatir_page_handler() {
-
-	$params = array(
-        'title' => 'Debatir',
-        'content' => 'La zona de debate del grupo, para este usuario',
-        'filter' => '',
-    	);
-
-    	$body = elgg_view_layout('content', $params);
-
-    	echo elgg_view_page('Debatir', $body);
-
-}
-
-function informarme_page_handler() {
-
-	$params = array(
-        'title' => 'Informarme',
-        'content' => 'La zona de información del grupo, para este usuario',
-        'filter' => '',
-    	);
-
-    	$body = elgg_view_layout('content', $params);
-
-    	echo elgg_view_page('Informarme', $body);
-
 }
 
 /**

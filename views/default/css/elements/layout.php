@@ -7,7 +7,7 @@
  * Default layout: 990px wide, centered. Used in default page shell
  *
  * @package Elgg.Core
- * @subpackage UI
+ * @subpackage UIlgg-page-topbar
  */
 ?>
 /* <style> /**/
@@ -50,7 +50,7 @@
 	border-bottom: 1px solid #000000; comentado */
 	padding: 0px; /*antes 0 20px;*/
 	position: relative;
-	height: 45px; /*antes 32*/
+	height: 44px; /*antes 32*/
 	z-index: 1;
 }
 
