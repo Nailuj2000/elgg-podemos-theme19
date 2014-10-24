@@ -6,8 +6,16 @@
  */
 
 ?>
+
+.groups-profile{
+	margin-left:0px;
+	background-color:#272727;
+	margin-right:10px;
+}
+
 .groups-profile > .elgg-image {
-	margin-right: 20px;
+	margin-left: 10px
+	margin-right: 10px;
 }
 .groups-stats {
 	margin-top: 10px;

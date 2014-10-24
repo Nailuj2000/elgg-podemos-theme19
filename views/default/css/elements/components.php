@@ -20,8 +20,7 @@
 }
 .elgg-image-block .elgg-image {
 	float: left;
-	margin-right: 8px;
-	margin-bottom:-5px; /*ESTILO AÑADIDO*/
+	margin: 0px 8px; /*ESTILOS AÑADIDOS*/
 
 }
 
