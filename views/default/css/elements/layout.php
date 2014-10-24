@@ -103,7 +103,7 @@
 	position: relative;
 	padding: 45px 0 20px 30px; /*antes 32px 0 20px 30px;*/
 	float: left; /*antes right;*/
-	width: 21%; /*antes 21.212121%;*/
+	width: 20%; /*antes 21.212121%;*/
 	margin: -1px 0 0 0px; /*antes 0;*/
 	/*border-left: 1px solid #EBEBEB;*/
 	background-color:#272727;/*estilo añadido*/
@@ -122,6 +122,7 @@
 	padding: 0px 0 0px 0; /*antes 12px 0 10px 0*/
 	background-color:#414141;
 	color:#969696;
+	padding-left:10px; /*ESTILO AÑADIDO*/
 }
 .elgg-main > .elgg-head {
 	padding-bottom: 5px;
@@ -136,7 +137,7 @@
 
 .elgg-layout-one-sidebar .elgg-main {
 	float: left;
-	width: 76.4% /*antes 72.525252%;*/
+	width: 72.4% /*antes 72.525252%;*/
 }
 .elgg-layout-two-sidebar .elgg-main {
 	float: left;

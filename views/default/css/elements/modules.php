@@ -5,8 +5,9 @@
 *************************************** */
 /*estilos propios*/
 .elgg-module.elgg-owner-block{
-	width: 100%;
+	width: 102%;
 	height:44px;
+	margin-left:-10px;
 }
 /*fin estilos propios*/
 

@@ -14,14 +14,21 @@
 	Image Block
 *************************************** */
 .elgg-image-block {
-	padding: 5px 0;/*antes 10px 0;*/
+	padding: 10px 0;
+	margin-left:10px;
 	
 }
 .elgg-image-block .elgg-image {
 	float: left;
 	margin-right: 8px;
 	margin-bottom:-5px; /*ESTILO AÑADIDO*/
+
 }
+
+.elgg-head .elgg-image-block .elgg-image {
+	display:none;
+}
+
 .elgg-image-block .elgg-image-alt {
 	float: right;
 	margin-left: 8px;
