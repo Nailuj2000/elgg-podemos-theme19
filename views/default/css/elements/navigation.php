@@ -195,11 +195,15 @@ margin-left:-7px;
 .elgg-menu-topbar {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	float: right; /*antes left*/
-	margin-right: 10px;
 	margin-top:-25px;
 	/*ESTILO AÑADIDO*/
 	padding:0px;
 	font-family: "Gotham Medium";/*ESTILO AÑADIDO*/
+}
+
+.elgg-menu-topbar-alt{
+	margin-right:10px;
+
 }
 
 .elgg-menu-topbar > li {
@@ -307,7 +311,7 @@ margin-left:-7px;
 }
 .elgg-more > a:after {
 	/*content: "\bb";*/ /*ESTILO COMENTADO*/
-	margin-left: 6px;
+	margin-left: 0px; /*ESTIL MODIFICADO*/
 }
 /* ***************************************
 	TITLE

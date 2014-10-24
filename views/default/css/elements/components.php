@@ -21,7 +21,6 @@
 	float: left;
 	margin-right: 8px;
 	margin-bottom:-5px; /*ESTILO AÑADIDO*/
-	display:none;/*ESTILO AÑADIDO*/
 }
 .elgg-image-block .elgg-image-alt {
 	float: right;
