@@ -106,12 +106,13 @@ src: url(<?php echo elgg_get_site_url(); ?>"mod/podemos_theme19/fonts/gotham-med
 	padding: 0 0px 1px 0; /*antes 0 10px 1px 0;*/
 	color: #FFF;
 	font-family: "Gotham Medium Regular";/*ESTILO AÑADIDO*/
+	margin-left:-10px;
 	
 }
 .elgg-breadcrumbs > li {
 	display: inline-block;
 	/*ESTILOS AÑADIDOS*/
-	height:45px;
+	height:44px;
 	margin-right:-35px;
 	overflow:hidden;
 }
@@ -149,7 +150,7 @@ margin-bottom:-22px; /*¿Por qué hay que bajarlo tanto?*/
 position:relative;
 width:0;
 height:0;
-border-color:transparent transparent transparent #322032;
+border-color:transparent transparent transparent #3b253b;
 border-style:solid;
 border-width:23px;
 }
@@ -158,7 +159,7 @@ border-width:23px;
 position:relative;
 width:0;
 height:0;
-border-color:#322032 #322032 #322032 transparent;
+border-color:#3b253b #3b253b #3b253b transparent;
 border-style:solid;
 border-width:23px;
 z-index:-1;
@@ -172,7 +173,7 @@ float:left;
 .elgg-breadcrumbs > li .contenido_item1{
 height:35px;
 padding-top:10px;
-background-color:#322032;
+background-color:#3b253b;
 padding-left:10px;
 }
 
@@ -183,7 +184,7 @@ margin-top:-10px;
 .elgg-breadcrumbs > li .contenido{
 height:33px;
 padding-top:12px;
-background-color:#322032;
+background-color:#3b253b;
 margin-left:-7px;
 }
 
@@ -202,14 +203,14 @@ margin-left:-7px;
 }
 
 .elgg-menu-topbar-alt{
-	margin-right:10px;
+	margin-right:30px;
 
 }
 
 .elgg-menu-topbar > li {
 	float: left;
 	height: 33px;
-	margin-left:10px;
+	margin-left:30px;
 }
 
 .elgg-menu-topbar > li > a {
@@ -522,19 +523,21 @@ margin-left:-7px;
 /*estilos propios*/
 
 .elgg-main .elgg-module{
-	/*background-color:#272727;*/
-	width:131%;
+	/*background-color:#292929;*/
+	width:100%;
 	font-family: "Gotham Medium";/*ESTILO AÑADIDO*/
+
 }
 
 .elgg-owner-block{
-	background-color:#272727;
-	height:50px;
+	background-color:#292929;
+	overflow:visible;
+	box-shadow: -15px 10px 10px -10px #000;
 }
 
 .elgg-menu-owner-block li {
 	display: inline-block;
-	border-right: 1px solid black;
+	/*border-right: 1px solid black;*/
 	height:45px;
 }
 /*fin estilos propios*/
@@ -548,12 +551,12 @@ margin-left:-7px;
 	text-decoration:none;
 }
 .elgg-menu-owner-block li a:hover {
-	background-color:#612D62;
+	background-color:#603761;
 	color: #272727;
 }
 .elgg-menu-owner-block li.elgg-state-selected > a {
 	color: #272727; /*color: #999;*/
-	background-color:#612D62;
+	background-color:#603761;
 	/*text-decoration: underline;*/
 }
 

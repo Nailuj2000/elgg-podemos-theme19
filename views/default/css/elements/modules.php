@@ -5,7 +5,7 @@
 *************************************** */
 /*estilos propios*/
 .elgg-module.elgg-owner-block{
-	width: 102%;
+	width: 145%;
 	height:44px;
 	margin-left:-10px;
 }
@@ -19,7 +19,6 @@
 /* Aside */
 .elgg-module-aside .elgg-head {
 	border-bottom: 1px solid #DCDCDC;
-
 	margin-bottom: 5px;
 	padding-bottom: 5px;
 }
