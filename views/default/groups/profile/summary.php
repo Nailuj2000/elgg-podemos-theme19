@@ -23,20 +23,24 @@ if (!$owner) {
 
 ?>
 <div class="groups-profile clearfix elgg-image-block">
+	<!--IMAGEN Y ESTADISTICAS DEL GRUPO-->
 	<div class="elgg-image">
+		<!--Imagen del grupo-->
 		<div class="groups-profile-icon">
 			<?php
 				// we don't force icons to be square so don't set width/height
-				echo elgg_view_entity_icon($group, 'large', array(
+				echo elgg_view_entity_icon($group, 'medium', array(
 					'href' => '',
 					'width' => '',
 					'height' => '',
 				)); 
 			?>
 		</div>
+		<!--Estadisticas del grupo de debajo de la imagen-->
 		<div class="groups-stats">
 			<p>
 				<b><?php echo elgg_echo("groups:owner"); ?>: </b>
+				<br />
 				<?php
 					echo elgg_view('output/url', array(
 						'text' => $owner->name,
@@ -54,6 +58,7 @@ if (!$owner) {
 		</div>
 	</div>
 
+	<!--DESCRIPCION GRANDE, BREVE Y TAGS DEL GRUPO.-->
 	<div class="groups-profile-fields elgg-body">
 		<?php
 			echo elgg_view('groups/profile/fields', $vars);

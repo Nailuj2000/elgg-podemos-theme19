@@ -22,17 +22,17 @@ if (isset($vars['class'])) {
 ?>
 
 <div class="<?php echo $class; ?>">
+	<?php
+	echo "<div class='elgg-podemos-header elgg-inner'>";
+	//MUESTRA EL ICONO Y EL TITULO DEL GRUPO Y EL MENU DE LA ENTIDAD.
+	echo elgg_view('page/elements/owner_block', $vars);
+
+	//MUESTRA EL HEAD DE PAGE CON TITULO Y BOTONES DE ADMINISTRACIÓN
+	echo elgg_view('page/layouts/elements/header', $vars);
+	echo "</div>";
+	?>
 	<div class="elgg-main elgg-body">
 		<?php
-			//MUESTRA LOS BREADCRUMS EN LA PARTE SUPERIOR DEL BODY DE LA PAGINA DEL SITE
-			//echo elgg_extract('nav', $vars, elgg_view('navigation/breadcrumbs'));
-			
-			//MUESTRA EL ICONO Y EL TITULO DEL GRUPO Y EL MENU DE LA ENTIDAD.
-			echo elgg_view('page/elements/owner_block', $vars);
-
-			//MUESTRA EL HEADER DEL LAS PAGINAS (TITULO Y MENUS DE GROUPS)
-			echo elgg_view('page/layouts/elements/header', $vars);
-			
 			// @todo deprecated so remove in Elgg 2.0
 			if (isset($vars['area1'])) {
 				echo $vars['area1'];
@@ -41,7 +41,7 @@ if (isset($vars['class'])) {
 				//MUESTRA EL CONTENIDO PRINCIPAL, MAIN DE PAGE.
 				echo $vars['content'];
 			}
-			
+
 			echo elgg_view('page/layouts/elements/footer', $vars);
 		?>
 	</div>
