@@ -52,7 +52,7 @@ if (isset($vars['class'])) {
 			// by moving sidebar below main content.
 			// On smaller screens, blocks are stacked in left to right order: content, sidebar.
 			//CARGA LA VISTA DE ELEMENTOS DE LA SIDEBAR Y LA MUESTRA.
-			//echo elgg_view('page/elements/sidebar', $vars);
+			echo elgg_view('page/elements/sidebar', $vars);
 
 		?>
 	</div>
