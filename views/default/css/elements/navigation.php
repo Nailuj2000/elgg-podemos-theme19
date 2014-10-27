@@ -522,7 +522,9 @@ margin-left:-7px;
 
 /*estilos propios*/
 .elgg-podemos-header{
-	width:50%;
+	width:100%;
+	background-color:#292929;
+	box-shadow: -15px 5px 10px -10px #000;
 }
 
 
@@ -534,9 +536,7 @@ margin-left:-7px;
 }
 
 .elgg-owner-block{
-	background-color:#292929;
-	overflow:visible;
-	box-shadow: -15px 10px 10px -10px #000;
+	width:40%;
 }
 
 .elgg-menu-owner-block li {

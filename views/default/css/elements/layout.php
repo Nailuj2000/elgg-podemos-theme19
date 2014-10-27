@@ -105,7 +105,7 @@
 	padding: 10px 0px 20px 30px; /*antes 32px 0 20px 30px;*/
 	float: left; /*antes right;*/
 	width: 24.555%; /*antes 21.212121%;*/
-	margin: 44px 0 0 0px; /*antes 0;*/
+	margin: 0px 0 0 0px; /*antes 0;*/
 	/*border-left: 1px solid #EBEBEB;*/
 	background-color:#292929;/*estilo añadido*/
 }
@@ -122,14 +122,26 @@
 	min-height: 360px;
 	padding: 0px 0 0px 0; /*antes 12px 0 10px 0*/
 	background-color:#414141;
-	color:#969696;
 	padding-left:10px; /*ESTILO AÑADIDO*/
 	z-index:100;
+	margin-top:-2px;
 }
 .elgg-main > .elgg-head {
 	padding-bottom: 5px;
 	border-bottom: 1px solid #EBEBEB;
 	margin-bottom: 10px;
+}
+
+.elgg-podemos-head{
+	width:40%;
+	float:right;
+	margin-top:-50px;	
+	height:44px;
+}
+
+.elgg-podemos-head .elgg-menu{
+	margin-top:5px;
+	margin-right:10px;
 }
 
 .elgg-layout-one-sidebar{

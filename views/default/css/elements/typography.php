@@ -12,14 +12,14 @@
 	Typography
 *************************************** */
 body {
-	color: #333;
+	color: #fff;/*#333;*/
 	font-size: 90%;
 	line-height: 1.4em;
 	font-family: "Helvetica Neue", Helvetica, "Lucida Grande", Arial, sans-serif;
 }
 
 a {
-	color: #5097CF;
+	color: #019875;
 }
 
 a:hover,
@@ -101,8 +101,6 @@ h6 { font-size: 0.8em; }
 	display: inline-block;
 	padding-top: 15px;
 	margin-right: 10px;
-	/*ESTILO AÑADIDO*/
-	color:#969696;
 }
 .elgg-heading-basic {
 	color: #0054A7;

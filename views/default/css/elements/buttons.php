@@ -17,7 +17,7 @@
 	width: auto;
 	padding: 6px 12px;
 	cursor: pointer;
-	background: #4787B8;
+	background: #019875;/*#4787B8;*/
 	border: 1px solid #3873AB; /* Fallback */
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: 3px;
@@ -29,7 +29,7 @@
 }
 .elgg-button:hover,
 .elgg-button:focus {
-	background: #60B6F7;
+	background: #97c2b8;/*#60B6F7*/;
 	text-decoration: none;
 	color: #FFF;
 }

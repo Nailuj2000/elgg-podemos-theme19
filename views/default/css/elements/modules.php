@@ -7,7 +7,6 @@
 .elgg-module.elgg-owner-block{
 	width: 60%;
 	height:44px;
-	margin-left:-10px;
 }
 /*fin estilos propios*/
 
@@ -30,7 +29,6 @@
 	margin-bottom: 10px;
 	height: auto;
 	overflow: hidden;
-	box-shadow: inset 0 0 1px #FFFFFF;
 }
 .elgg-module-info > .elgg-head * {
 	color: #444;

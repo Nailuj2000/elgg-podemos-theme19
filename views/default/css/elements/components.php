@@ -16,8 +16,12 @@
 .elgg-image-block {
 	padding: 12px 0;
 	margin-left:10px;
-	
 }
+
+.elgg-main .elgg-image-block{
+	margin-top:9px;
+}
+
 .elgg-image-block .elgg-image {
 	float: left;
 	margin: 0px 8px; /*ESTILOS AÑADIDOS*/

@@ -23,7 +23,8 @@ if (isset($vars['class'])) {
 
 <div class="<?php echo $class; ?>">
 	<?php
-	echo "<div class='elgg-podemos-header elgg-inner'>";
+
+	echo "<div class='elgg-podemos-header'>";
 	//MUESTRA EL ICONO Y EL TITULO DEL GRUPO Y EL MENU DE LA ENTIDAD.
 	echo elgg_view('page/elements/owner_block', $vars);
 
@@ -51,7 +52,7 @@ if (isset($vars['class'])) {
 			// by moving sidebar below main content.
 			// On smaller screens, blocks are stacked in left to right order: content, sidebar.
 			//CARGA LA VISTA DE ELEMENTOS DE LA SIDEBAR Y LA MUESTRA.
-			echo elgg_view('page/elements/sidebar', $vars);
+			//echo elgg_view('page/elements/sidebar', $vars);
 
 		?>
 	</div>
