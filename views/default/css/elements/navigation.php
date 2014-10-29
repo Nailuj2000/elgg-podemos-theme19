@@ -524,7 +524,7 @@ margin-left:-7px;
 .elgg-podemos-header{
 	width:100%;
 	background-color:#292929;
-	box-shadow: -15px 5px 10px -10px #000;
+	box-shadow: 0px 0px 100px #000;
 }
 
 
