@@ -38,15 +38,28 @@
 	margin: 0;
 }
 
-#groups-tools > li {
-	width: 48%;
+#groups-tools > li{
 	min-height: 200px;
 	margin-bottom: 40px;
+	margin-right:10px;
+	background-color:#272727;
 }
 
-#groups-tools > li:nth-child(odd) {
-	margin-right: 4%;
+#groups-tools .elgg-head{
+	background-color:#019875;
 }
+
+#groups-tools .elgg-head h3{
+	color: #603761;
+}
+
+#groups-tools > li, #groups-tools .elgg-head{
+	border-radius:5px 5px 0px 0px;
+}
+
+/*#groups-tools > li:nth-child(odd) {
+	margin-right: 4%;
+}*/
 
 .groups-widget-viewall {
 	float: right;

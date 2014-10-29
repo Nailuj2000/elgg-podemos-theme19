@@ -102,13 +102,61 @@
 }
 .elgg-sidebar {
 	position: relative;
-	padding: 10px 0px 20px 30px; /*antes 32px 0 20px 30px;*/
+	padding: 0px 0px 0px 0px; /*antes 32px 0 20px 30px;*/
 	float: left; /*antes right;*/
-	width: 24.555%; /*antes 21.212121%;*/
-	margin: 0px 0 0 0px; /*antes 0;*/
+	width: 26.8%; /*antes 21.212121%;*/
+	margin: -2px 0 0 0px; /*antes 0;*/
 	/*border-left: 1px solid #EBEBEB;*/
 	background-color:#292929;/*estilo añadido*/
 }
+
+/*ESTILOS AÑADIDOS*/
+.elgg-sidebar .elgg-module-aside{
+	background-color:#414141;
+	width:100%;
+	margin:0px;
+}
+
+.elgg-sidebar .elgg-head{
+	border:none;
+	height:34px;
+	padding-top:15px;
+	text-align:center;
+	background-color:#272727;
+	margin-bottom:0px;
+}
+
+.elgg-sidebar .elgg-module-aside .elgg-head h3{
+	color:#fff;
+}
+
+.elgg-sidebar .elgg-module-aside .elgg-body{
+	background-color:#272727;
+}
+
+.elgg-sidebar .elgg-image-block{
+	margin-left:0px;
+	background-color:#202020;
+	box-shadow: 0px 0px 20px 5px #000 inset;
+	margin-bottom:1px;
+}
+
+.elgg-sidebar .elgg-image-block a{
+	color:#fff;
+}
+
+.elgg-sidebar .mts{
+	height:31px;
+	padding-top:12px;
+	margin-top:0px;
+	background-color:#202020;
+	box-shadow: 0px 0px 20px 5px #000 inset;
+	margin-top:4px;
+	margin-bottom:1px;
+}
+
+/*FIN ESTILOS AÑADIDOS*/
+
 .elgg-sidebar-alt {
 	position: relative;
 	padding: 32px 30px 20px 0;
