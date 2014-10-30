@@ -20,6 +20,7 @@ if ($owner instanceof ElggGroup || $owner instanceof ElggUser) {
 	elgg_unregister_plugin_hook_handler('register', 'menu:owner_block', 'blog_owner_block_menu');
 	elgg_unregister_plugin_hook_handler('register', 'menu:owner_block', 'bookmarks_owner_block_menu');
 	elgg_unregister_plugin_hook_handler('register', 'menu:owner_block', 'file_owner_block_menu');
+	elgg_unregister_plugin_hook_handler('register', 'menu_owner_block', 'event_manager_owner_block_menu');	
 
 	//MUESTRA EL AVATAR DE ENTIDAD Y EL NOMBRE
 	$header = elgg_view_entity($owner, array('full_view' => false));
