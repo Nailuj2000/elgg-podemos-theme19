@@ -50,7 +50,7 @@
 }
 
 #groups-tools .elgg-head h3{
-	color: #603761;
+	color: #fff; /*antes #603761;*/
 }
 
 #groups-tools > li, #groups-tools .elgg-head{

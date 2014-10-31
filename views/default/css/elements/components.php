@@ -25,7 +25,23 @@
 .elgg-image-block .elgg-image {
 	float: left;
 	margin: 0px 8px; /*ESTILOS AÑADIDOS*/
+	color:#272727;
 
+}
+
+.elgg-item-object-event .elgg-image-block .elgg-image {
+	border-radius:50%;
+	overflow:hidden;
+}
+
+.elgg-item-object-event .elgg-image-block .elgg-image .event_manager_event_list_icon_month{
+	padding:5px 0px 2px 0px;
+	border:0px;
+}
+
+.elgg-item-object-event .elgg-image-block .elgg-image .event_manager_event_list_icon_day{
+	border-bottom:0px;
+	border-right:0px;
 }
 
 .elgg-head .elgg-image-block .elgg-image {
@@ -45,7 +61,7 @@
 	clear: both;
 }
 .elgg-list > li {
-	border-bottom: 1px solid #DCDCDC;
+
 }
 .elgg-item h3 a {
 	padding-bottom: 4px;

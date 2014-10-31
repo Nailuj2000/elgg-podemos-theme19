@@ -19,7 +19,7 @@ if (elgg_group_gatekeeper(false)) {
 		echo elgg_view('groups/profile/closed_membership');
 
 	}
-
+//MUESTRA LA VISTA DE LOS WIDGETS EN EL MURO DEL GRUPO
 echo elgg_view('groups/profile/widgets', $vars);
 
 	} else {

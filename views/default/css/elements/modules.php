@@ -12,7 +12,29 @@
 
 .elgg-module {
 	overflow: hidden;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+}
+
+#groups-tools .elgg-module .elgg-body{
+	margin:0px 10px;
+}
+
+#groups-tools .elgg-module .elgg-item-object-event .elgg-body {
+	margin-top:10px;
+}
+
+#groups-tools .elgg-module .elgg-item-object-event .elgg-body .elgg-content{
+	float:right;
+}
+
+#groups-tools .elgg-module .elgg-body h3{
+	margin:0px 10px;
+	float:left;
+}
+
+#groups-tools .elgg-module .elgg-body .elgg-content{
+	clear:none;
+	margin:0px;
 }
 
 /* Aside */
@@ -22,7 +44,12 @@
 	padding-bottom: 5px;
 }
 
+.elgg-module-aside .elgg-body {
+	margin: 0px;
+}
+
 /* Info */
+
 .elgg-module-info > .elgg-head {
 	background-color: #F0F0F0;
 	padding: 10px;
