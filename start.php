@@ -6,19 +6,32 @@
  */
 
 //EJECUCIÓN DEL METODO QUE REGISTRA UN MANEJADOR DE EVENTOS DE ELLG
-//CUANDO SE ACTIVA O SE VUELVEN ACTUALZIAR LA CONFIGURACIÓN SE EJECUTA EL EVENTO INITI 
+//CUANDO SE ACTIVA O SE VUELVEN ACTUALZIAR LA CONFIGURACIÓN SE EJECUTA EL EVENTO INITI
 elgg_register_event_handler('init','system','podemos_theme19_init');
 // init es el evento y system es el ámbito (allá donde te encuentras).
 
 //DECLARACIÓN DEL METODO A EJECUTAR CUANDO SE EJECUTA EL START.PHP
 function podemos_theme19_init() {
 
+	//REGISTRO DE LIBRERIAS PARA EL THEME
+	$root = dirname(__FILE__);
+	elgg_register_library('group_modules', "$root/lib/group_modules.php");
+	elgg_load_library("group_modules");
+
+	//PASAMOS LOS MODULES QUE QUEREMOS
+	//recogemos los que queremos mantener.
+	//TODO: que los recoja de las settings del theme.
+	$modules = array("bookmarks","blog");
+
+	//se los pasamos a una función que elimina todos menos estos
+	remove_all_group_modules($modules);
+
 	//REGISTRO DE UN MANEJADOR DE EVENTOS PAGESETUP
 	elgg_register_event_handler('pagesetup', 'system', 'podemos_theme19_pagesetup', 1000);
 	//Le establecermos una prioridad 1000 que es la maxima.
 
 	// theme specific CSS
-	// sobrescribimos las vistas del core.
+	// extendemos el css del core.
 	elgg_extend_view('css/elgg', 'aalborg_theme/css');
 
 	elgg_register_plugin_hook_handler('head', 'page', 'podemos_theme19_setuphead');
@@ -34,10 +47,10 @@ function podemos_theme19_init() {
 	//REGISTRAMOS UN NUEVO ELEMENTO EN EL MENU TOPBAR, EL CUAL TIENE DOS SECCIONES: 'default' y 'alt'
 	elgg_register_menu_item('topbar', array(
         'name' => 'search',
-	'priority' => 600,
+				'priority' => 600,
         'text' => "<img src='".elgg_get_site_url()."/mod/podemos_theme19/graphics/lupa.png'/>",
         'href' => "#",
-	'section' => 'alt',
+				'section' => 'alt',
 	));
 	//RECOGEMOS EL ITEM DEL MENU COMO UN OBJETO
 	//$item = elgg_get_menu_item('topbar', 'search');
@@ -51,7 +64,7 @@ function podemos_theme19_init() {
 function podemos_theme19_pagesetup() {
 
 	/*
-	//DESXTENDER LA VISTA search/header DE LA DE page/elements/header 
+	//DESXTENDER LA VISTA search/header DE LA DE page/elements/header
 	//¿QUE ESTARÁ EXTENDIDA POR EL CORE?
 	elgg_unextend_view('page/elements/header', 'search/header');
 	//SOLO SE EXTIENDE A LOS USUARIOS LOGUEADOS.
@@ -79,7 +92,7 @@ function podemos_theme19_pagesetup() {
 				elgg_register_menu_item('site', $item);
 			}
 		}
-		
+
 		$item = elgg_get_menu_item('topbar', 'usersettings');
 		if ($item) {
 			$item->setParentName('account');
@@ -110,6 +123,8 @@ function podemos_theme19_pagesetup() {
 			}
 		}
 
+
+
 		if (elgg_is_active_plugin('reportedcontent')) {
 			$item = elgg_unregister_menu_item('footer', 'report_this');
 			if ($item) {
@@ -135,7 +150,7 @@ function podemos_theme19_setuphead($hook, $type, $data) {
 		'name' => 'viewport',
 		'content' => 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0',
 	);
-    
+
     // https://developer.chrome.com/multidevice/android/installtohomescreen
     $data['metas'][] = array(
         'name' => 'mobile-web-app-capable',
@@ -151,6 +166,4 @@ function podemos_theme19_setuphead($hook, $type, $data) {
 		'rel' => 'apple-touch-icon',
 		'href' => elgg_normalize_url('mod/podemos_theme19/graphics/homescreen.png'),
 	);
-
-	return $data;
 }
