@@ -521,12 +521,9 @@ margin-left:-7px;
 *************************************** */
 
 /*estilos propios*/
-.elgg-podemos-header{
-	width:100%;
-	background-color:#292929;
+/*.elgg-podemos-header{
 	box-shadow: 0px 0px 100px #000;
-}
-
+}*/
 
 .elgg-main .elgg-module{
 	/*background-color:#292929;*/

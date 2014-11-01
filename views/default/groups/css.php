@@ -11,6 +11,7 @@
 	margin-left:0px;
 	background-color:#272727;
 	margin-right:10px;
+	box-shadow: 0px 0px 5px 2px #111 inset;
 }
 
 .groups-profile > .elgg-image {

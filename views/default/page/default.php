@@ -39,6 +39,12 @@ $body = <<<__BODY
 		$messages
 	</div>
 __BODY;
+
+
+//$header = "<div class='elgg-podemos-header'>";
+$header.=elgg_view('page/elements/owner_block', $vars);
+$header.=elgg_view('page/layouts/elements/header', $vars);
+//$header.="</div>";
 	
 if (elgg_is_logged_in()) {
 	$topbar = elgg_view('page/elements/topbar', $vars);
@@ -52,12 +58,12 @@ if (elgg_is_logged_in()) {
 __BODY;
 }
 $body .= <<<__BODY
-	<!--<div class="elgg-page-header">
+	<div class="elgg-page-header">
 		<div class="elgg-inner">
 			$header
 		</div>
 	</div>
-	<div class="elgg-page-navbar">
+	<!--<div class="elgg-page-navbar">
 		<div class="elgg-inner">
 			$navbar
 		</div>
