@@ -37,6 +37,7 @@
 .elgg-item-object-event .elgg-image-block .elgg-image .event_manager_event_list_icon_month{
 	padding:5px 0px 2px 0px;
 	border:0px;
+	font-weight:bold;
 }
 
 .elgg-item-object-event .elgg-image-block .elgg-image .event_manager_event_list_icon_day{

@@ -81,7 +81,7 @@
 }
 .elgg-page-header > .elgg-inner {
 	position: relative;
-	height:45px;
+	height:43px;
 }
 /***** PAGE NAVBAR ******/
 .elgg-page-navbar {
