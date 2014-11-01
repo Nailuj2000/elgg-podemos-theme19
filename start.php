@@ -166,4 +166,5 @@ function podemos_theme19_setuphead($hook, $type, $data) {
 		'rel' => 'apple-touch-icon',
 		'href' => elgg_normalize_url('mod/podemos_theme19/graphics/homescreen.png'),
 	);
+	return $data;
 }
