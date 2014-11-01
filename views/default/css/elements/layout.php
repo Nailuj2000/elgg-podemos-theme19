@@ -24,7 +24,8 @@
 .elgg-page-default .elgg-page-header > .elgg-inner {
 	/*max-width: 1290px; /*antes 990*/
 	margin: 0 auto;
-	min-height: 65px;
+	/*min-height: 65px;*/
+	background-color:#292929;
 }
 .elgg-page-default .elgg-page-navbar > .elgg-inner {
 	/*max-width: 1290px; /*antes 990*/
@@ -72,12 +73,15 @@
 
 /***** PAGE HEADER ******/
 .elgg-page-header {
-	padding: 5px 20px 10px;
+	/*padding: 5px 20px 10px;*/
 	position: relative;
-	background: #60B8F7;
+	background: #292929;/* antes #60B8F7;*/
+	height:44px;
+	box-shadow: 0px 0px 100px #000;
 }
 .elgg-page-header > .elgg-inner {
 	position: relative;
+	height:45px;
 }
 /***** PAGE NAVBAR ******/
 .elgg-page-navbar {
