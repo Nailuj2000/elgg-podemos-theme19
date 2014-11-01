@@ -13,17 +13,14 @@ if (isset($vars['header'])) {
 	return;
 }
 
-$title = elgg_extract('title', $vars, '');
-
 $buttons = elgg_view_menu('title', array(
 	'sort_by' => 'priority',
 	'class' => 'elgg-menu-hz',
 ));
 
-if ($title || $buttons) {
+if ($buttons) {
 	echo '<div class="elgg-podemos-head clearfix">';
 	// @todo .elgg-heading-main supports action buttons - maybe rename class name?
 	echo $buttons;
-	echo elgg_view_title($vars['title'], array('class' => 'elgg-heading-main'));
 	echo '</div>';
 }
