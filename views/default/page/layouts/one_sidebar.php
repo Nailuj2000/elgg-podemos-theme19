@@ -22,9 +22,7 @@ if (isset($vars['class'])) {
 ?>
 
 <div class="<?php echo $class; ?>">
-	<?php
 
-	?>
 	<div class="elgg-main elgg-body">
 		<?php
 			// @todo deprecated so remove in Elgg 2.0

@@ -16,7 +16,10 @@ function podemos_theme19_init() {
 	//REGISTRO DE LIBRERIAS PARA EL THEME
 	$root = dirname(__FILE__);
 	elgg_register_library('group_modules', "$root/lib/group_modules.php");
+	elgg_register_library('migas_pan', "$root/lib/migas_pan.php");
+	elgg_register_library('elgg:groups', "$root/lib/groups.php");
 	elgg_load_library("group_modules");
+	elgg_load_library("migas_pan");
 
 	//PASAMOS LOS MODULES QUE QUEREMOS
 	//recogemos los que queremos mantener.
@@ -25,6 +28,7 @@ function podemos_theme19_init() {
 
 	//se los pasamos a una función que elimina todos menos estos
 	remove_all_group_modules($modules);
+
 
 	//REGISTRO DE UN MANEJADOR DE EVENTOS PAGESETUP
 	elgg_register_event_handler('pagesetup', 'system', 'podemos_theme19_pagesetup', 1000);
@@ -72,6 +76,15 @@ function podemos_theme19_pagesetup() {
 		elgg_extend_view('page/elements/topbar', 'search/header', 0);
 	}
 	*/
+
+	//ESTABLECER LAS MIGAS DE PAN
+	//TODO: PASAR ESTÁ LOGICA A UN METODO
+	//establecemos las migas de pan desde el grupo donde estemos hasta el ascediente posible.
+	$owner_guid = elgg_get_page_owner_guid();
+	//print_r($owner_guid);
+	set_migas($owner_guid);
+
+
 	if (elgg_is_logged_in()) {
 
 		/*CAMBIAMOS EL TEXTO (TEXT) POR UNA IMAGEN (antes elgg_echo('account'))*/
