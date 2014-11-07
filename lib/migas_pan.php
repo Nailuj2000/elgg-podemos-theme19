@@ -38,8 +38,17 @@ function set_migas($guid_actual){
 
   if($group_padre != NULL){
     $title_padre = $group_padre->name;
-    $link_padre = $group_padre->getURL();
 
+    $contexto = elgg_get_context();
+    switch($contexto){
+      case "discussion":
+      $link_padre = elgg_get_site_url()."discussion/owner/".$CONFIG->padre->guid;
+      break;
+      case "pages":
+      $link_padre = elgg_get_site_url()."pages/groups/".$CONFIG->padre->guid;
+      default:
+      $link_padre = $group_padre->getURL();
+    }
     $CONFIG->array_migas[] = array($CONFIG->padre->guid, $title_padre, $link_padre);
     //var_dump($CONFIG->array_migas); // un 49 como una catedral
   }
@@ -59,7 +68,7 @@ function set_migas($guid_actual){
     //cuando no haya padre será igual a NULL
     $CONFIG->padre = $abuelo;
   }
-  var_dump($CONFIG->array_migas);
+  //var_dump($CONFIG->array_migas);
 }
 
 ?>

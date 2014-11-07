@@ -1,8 +1,8 @@
 <?php
 /**
- * Aalborg theme plugin
+ * Podemos theme
  *
- * @package AalborgTheme
+ * @package podemos_theme19
  */
 
 //EJECUCIÓN DEL METODO QUE REGISTRA UN MANEJADOR DE EVENTOS DE ELLG
@@ -18,10 +18,24 @@ function podemos_theme19_init() {
 	elgg_register_library('group_modules', "$root/lib/group_modules.php");
 	elgg_register_library('migas_pan', "$root/lib/migas_pan.php");
 	elgg_register_library('elgg:groups', "$root/lib/groups.php");
+	elgg_register_library('sidebar_modules', "$root/lib/sidebar_modules.php");
 	elgg_load_library("group_modules");
 	elgg_load_library("migas_pan");
+	elgg_load_library("sidebar_modules");
 
-	//PASAMOS LOS MODULES QUE QUEREMOS
+	//DESACTIVAMOS ELEMENTOS DEL MENU OWNER_BLOCK DE GROUPS
+	//TODO:establecer en settings que secciones queremos y cuales no.
+	//TODO:llamar a una funcion que recorra los que tenemos y desregistrarlos
+	elgg_unregister_plugin_hook_handler('register', 'menu:owner_block', 'groups_activity_owner_block_menu');
+	elgg_unregister_plugin_hook_handler('register', 'menu:owner_block', 'blog_owner_block_menu');
+	elgg_unregister_plugin_hook_handler('register', 'menu:owner_block', 'bookmarks_owner_block_menu');
+	elgg_unregister_plugin_hook_handler('register', 'menu:owner_block', 'file_owner_block_menu');
+	elgg_unregister_plugin_hook_handler("register", "menu:owner_block", "event_manager_owner_block_menu");
+
+	//En las que hemos dejado, queremos meter algunos sidebar_modules de otras.
+	//elgg_extend_view("page/elements/$module", 'page/elements/podemos_theme/'.$module.'_new',$module);
+	
+	//PASAMOS LOS GROUP MODULES QUE QUEREMOS
 	//recogemos los que queremos mantener.
 	//TODO: que los recoja de las settings del theme.
 	$modules = array("bookmarks","blog");
@@ -76,14 +90,6 @@ function podemos_theme19_pagesetup() {
 		elgg_extend_view('page/elements/topbar', 'search/header', 0);
 	}
 	*/
-
-	//ESTABLECER LAS MIGAS DE PAN
-	//TODO: PASAR ESTÁ LOGICA A UN METODO
-	//establecemos las migas de pan desde el grupo donde estemos hasta el ascediente posible.
-	$owner_guid = elgg_get_page_owner_guid();
-	//print_r($owner_guid);
-	set_migas($owner_guid);
-
 
 	if (elgg_is_logged_in()) {
 

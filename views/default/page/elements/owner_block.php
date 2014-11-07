@@ -15,13 +15,6 @@ $owner = elgg_get_page_owner_entity();
 if ($owner instanceof ElggGroup || $owner instanceof ElggUser) {
 // si $owner es una instancia de la clase ElggGroup o es una instancia de ElggUser.....
 
-	//DESACTIVAMOS ELEMENTOS DEL MENU OWNER_BLOCK DE GROUPS
-	elgg_unregister_plugin_hook_handler('register', 'menu:owner_block', 'groups_activity_owner_block_menu');
-	elgg_unregister_plugin_hook_handler('register', 'menu:owner_block', 'blog_owner_block_menu');
-	elgg_unregister_plugin_hook_handler('register', 'menu:owner_block', 'bookmarks_owner_block_menu');
-	elgg_unregister_plugin_hook_handler('register', 'menu:owner_block', 'file_owner_block_menu');
-	elgg_unregister_plugin_hook_handler("register", "menu:owner_block", "event_manager_owner_block_menu");
-
 	//MUESTRA EL AVATAR DE ENTIDAD Y EL NOMBRE
 	$header = elgg_view_entity($owner, array('full_view' => false));
 

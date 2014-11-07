@@ -11,6 +11,13 @@
  * @see elgg_push_breadcrumb
  */
 
+//ESTABLECER LAS MIGAS DE PAN
+//TODO: PASAR ESTÁ LOGICA A UN METODO
+//establecemos las migas de pan desde el grupo donde estemos hasta el ascediente posible.
+$owner_guid = elgg_get_page_owner_guid();
+//print_r($owner_guid);
+set_migas($owner_guid);
+
 $migas = array_reverse($CONFIG->array_migas);
 //print_r($CONFIG->array_migas);
 

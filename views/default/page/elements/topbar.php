@@ -5,7 +5,6 @@
  */
 
 //MOSTRAR LOS BREADCRUMS DE LOS GRUPOS COMO NAVEGACIÓN.
-//TODO: Hacer que no se muestren los de las otras entidades y algunos detalles.
 echo elgg_view('navigation/migas_pan');
 
 //MOSTRAMOS EL MENU TOPBAR
