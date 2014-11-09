@@ -34,13 +34,8 @@ function podemos_theme19_init() {
 
 	//En las que hemos dejado, queremos meter algunos sidebar_modules de otras.
 	//elgg_extend_view("page/elements/$module", 'page/elements/podemos_theme/'.$module.'_new',$module);
-<<<<<<< HEAD
 
-	//PASAMOS LOS GROUP MODULES QUE QUEREMOS
-=======
-	
 	//PASAMOS LOS GROUP MODULES QUE QUEREMOS (coincde con el nombre de los plugins a los que pertenecen)
->>>>>>> 58d70ed385f056fd60738a49e26841bddb1d1b41
 	//recogemos los que queremos mantener.
 	//TODO: que los recoja de las settings del theme.
 	$modules = array("bookmarks","blog","event_manager");

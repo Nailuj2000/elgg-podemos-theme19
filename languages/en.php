@@ -429,8 +429,8 @@ View and comment on the page:
 	/**
 	 * Bookmarks
 	 */
-	'groups:bookmarks:' => "Groups links",
-	'grups:bookmarks:more' => "View all links",
-	'groups:bookmarks:none' => "No more links",
+	'groups:bookmarks' => "Groups bookmarks",
+	'groups:bookmarks:more' => "View all bookmarks",
+	'groups:bookmarks:none' => "No bookmarks",
 
 );
