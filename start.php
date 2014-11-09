@@ -21,7 +21,7 @@ function podemos_theme19_init() {
 	elgg_register_library('sidebar_modules', "$root/lib/sidebar_modules.php");
 	elgg_load_library("group_modules");
 	elgg_load_library("migas_pan");
-	elgg_load_library("sidebar_modules");
+	//elgg_load_library("sidebar_modules");
 
 	//DESACTIVAMOS ELEMENTOS DEL MENU OWNER_BLOCK DE GROUPS
 	//TODO:establecer en settings que secciones queremos y cuales no.
@@ -35,10 +35,10 @@ function podemos_theme19_init() {
 	//En las que hemos dejado, queremos meter algunos sidebar_modules de otras.
 	//elgg_extend_view("page/elements/$module", 'page/elements/podemos_theme/'.$module.'_new',$module);
 	
-	//PASAMOS LOS GROUP MODULES QUE QUEREMOS
+	//PASAMOS LOS GROUP MODULES QUE QUEREMOS (coincde con el nombre de los plugins a los que pertenecen)
 	//recogemos los que queremos mantener.
 	//TODO: que los recoja de las settings del theme.
-	$modules = array("bookmarks","blog");
+	$modules = array("bookmarks","blog","event_manager");
 
 	//se los pasamos a una función que elimina todos menos estos
 	remove_all_group_modules($modules);
