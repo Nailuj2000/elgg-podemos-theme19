@@ -315,7 +315,7 @@ or click below to view the group's join requests:
 	/**
 	 * ---------------------------------- TRADUCCION PARA LOS TEXTOS DEL PLUGIN PAGES ----------------------------------
 	 */
-	
+
 	/**
 	 * Menu items and titles
 	 */
@@ -425,5 +425,12 @@ View and comment on the page:
 
 	'pages:newchild' => "Create a sub-page",
 	'pages:backtoparent' => "Back to '%s'",
+
+	/**
+	 * Bookmarks
+	 */
+	'groups:bookmarks:' => "Groups links",
+	'grups:bookmarks:more' => "View all links",
+	'groups:bookmarks:none' => "No more links",
 
 );

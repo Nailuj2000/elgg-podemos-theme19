@@ -12,9 +12,12 @@
 	'class' => 'elgg-menu-hz',
 ));*/
 
-//TODO: hacer que solo se muestren alguna secciones.
-echo elgg_view_menu('page', array('sort_by' => 'name'));
+//TODO: Encontrar donde se cargar los elementos de $vars['sidebar'].
+//echo elgg_view_menu('page', array('sort_by' => 'name'));
 
+echo elgg_get_context();
+$array_secciones = array("group_profile", "pages");
+//echo set_sidebars_modules($array_secciones);
 // optional 'sidebar' parameter
 //MUESTRA EL RESTO DE ELEMENTOS DE LA SIDEBAR
 if (isset($vars['sidebar'])) {
@@ -23,12 +26,12 @@ if (isset($vars['sidebar'])) {
 
 // @todo deprecated so remove in Elgg 2.0
 // optional second parameter of elgg_view_layout
-if (isset($vars['area2'])) {
+/*if (isset($vars['area2'])) {
 	echo $vars['area2'];
-}
+}*/
 
 // @todo deprecated so remove in Elgg 2.0
 // optional third parameter of elgg_view_layout
-if (isset($vars['area3'])) {
+/*if (isset($vars['area3'])) {
 	echo $vars['area3'];
-}
+}*/

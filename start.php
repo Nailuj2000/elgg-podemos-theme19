@@ -24,8 +24,8 @@ function podemos_theme19_init() {
 	elgg_load_library("sidebar_modules");
 
 	//DESACTIVAMOS ELEMENTOS DEL MENU OWNER_BLOCK DE GROUPS
-	//TODO:establecer en settings que secciones queremos y cuales no.
-	//TODO:llamar a una funcion que recorra los que tenemos y desregistrarlos
+	/*TODO:establecer en settings que secciones queremos y cuales no.
+	y llamar a una funcion que recorra los que tenemos y desregistrarlos*/
 	elgg_unregister_plugin_hook_handler('register', 'menu:owner_block', 'groups_activity_owner_block_menu');
 	elgg_unregister_plugin_hook_handler('register', 'menu:owner_block', 'blog_owner_block_menu');
 	elgg_unregister_plugin_hook_handler('register', 'menu:owner_block', 'bookmarks_owner_block_menu');
@@ -34,7 +34,7 @@ function podemos_theme19_init() {
 
 	//En las que hemos dejado, queremos meter algunos sidebar_modules de otras.
 	//elgg_extend_view("page/elements/$module", 'page/elements/podemos_theme/'.$module.'_new',$module);
-	
+
 	//PASAMOS LOS GROUP MODULES QUE QUEREMOS
 	//recogemos los que queremos mantener.
 	//TODO: que los recoja de las settings del theme.

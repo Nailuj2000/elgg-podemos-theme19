@@ -312,6 +312,8 @@ function groups_handle_profile_page($guid) {
 			$sidebar .= elgg_view('groups/sidebar/search', array('entity' => $group));
 		}
 		$sidebar .= elgg_view('groups/sidebar/members', array('entity' => $group));
+		//añadimos la vista de bookmarks en la sidebar del muro de los grupos.
+		$sidebar .= elgg_view('groups/sidebar/bookmarks', array('entity' => $group));
 
 		$subscribed = false;
 		if (elgg_is_active_plugin('notifications')) {
