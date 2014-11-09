@@ -138,6 +138,10 @@
 	background-color:#272727;
 }
 
+.elgg-sidebar .elgg-module-aside .elgg-body > ul{
+	margin: 0px 10px;
+}
+
 .elgg-sidebar .elgg-image-block{
 	margin-left:0px;
 	background-color:#202020;
@@ -157,6 +161,27 @@
 	box-shadow: 0px 0px 20px 5px #000 inset;
 	margin-top:4px;
 	margin-bottom:1px;
+}
+
+.elgg-sidebar ul.elgg-menu{
+	margin-bottom:5px;
+}
+
+.elgg-sidebar ul.elgg-menu li{
+	margin-left:0px;
+	background-color:#202020;
+	box-shadow: 0px 0px 20px 5px #000 inset;
+	margin-bottom:1px;
+	padding:6px 10px;
+}
+
+.elgg-sidebar ul.elgg-menu li a{
+	color:#fff;
+	text-decoration:none;
+}
+
+.elgg-sidebar > .elgg-module form{
+	margin: 0px 10px;
 }
 
 /*FIN ESTILOS AÑADIDOS*/

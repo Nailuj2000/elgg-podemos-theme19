@@ -19,13 +19,13 @@
 	margin:0px 10px;
 }
 
-#groups-tools .elgg-module .elgg-item-object-event .elgg-body {
+#groups-tools .elgg-module .elgg-body {
 	display:box;
 	box-orient:horizontal;
 	box-align:stretch;
 }
 
-#groups-tools .elgg-module .elgg-item-object-event .elgg-body > .podemos-group-name{
+#groups-tools .elgg-module .elgg-body > .podemos-group-name{
 	background-color:#603761;
 	float:left;
 	padding:5px;
@@ -33,16 +33,30 @@
 	width:9.4%;
 	margin-left:2%;
 	margin-right:2.6%;
+	text-align:center;
 }
 
-#groups-tools .elgg-module .elgg-item-object-event .elgg-body .elgg-content{
+#groups-tools .elgg-module .elgg-body > .clearfix{
+	width:72.7%;
+}
+
+.elgg-owner-block .elgg-body > .podemos-group-name{
+	display:none;
+}
+
+#groups-tools .elgg-module .elgg-body .elgg-content{
 	float:right;
-	width:26.8%;
+	width:27%;
+
+}
+
+ul li .elgg-image-block .elgg-body .clearfix{
+display:none;
 }
 
 #groups-tools .elgg-module .elgg-body h3{
 	float:left;
-	width:55.5%;
+	width:55.3%;
 	margin-right:2.5%;
 	text-align:justify;
 }

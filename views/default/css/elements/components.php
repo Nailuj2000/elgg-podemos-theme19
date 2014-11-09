@@ -14,7 +14,7 @@
 	Image Block
 *************************************** */
 .elgg-image-block {
-	padding: 12px 0;
+	padding: 12px 2px;
 	margin-left:10px;
 }
 
@@ -61,9 +61,16 @@
 	margin: 5px 0;
 	clear: both;
 }
+
 .elgg-list > li {
 
 }
+
+.elgg-main > ul.elgg-list {
+	background:blue;
+	margin-right:10px;
+}
+
 .elgg-item h3 a {
 	padding-bottom: 4px;
 }
