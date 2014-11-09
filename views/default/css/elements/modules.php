@@ -20,21 +20,35 @@
 }
 
 #groups-tools .elgg-module .elgg-item-object-event .elgg-body {
-	margin-top:10px;
+	display:box;
+	box-orient:horizontal;
+	box-align:stretch;
+}
+
+#groups-tools .elgg-module .elgg-item-object-event .elgg-body > .podemos-group-name{
+	background-color:#603761;
+	float:left;
+	padding:5px;
+	border-radius:5px;
+	width:9.4%;
+	margin-left:2%;
+	margin-right:2.6%;
 }
 
 #groups-tools .elgg-module .elgg-item-object-event .elgg-body .elgg-content{
 	float:right;
+	width:26.8%;
 }
 
 #groups-tools .elgg-module .elgg-body h3{
-	margin:0px 10px;
 	float:left;
+	width:55.5%;
+	margin-right:2.5%;
+	text-align:justify;
 }
 
 #groups-tools .elgg-module .elgg-body .elgg-content{
 	clear:none;
-	margin:0px;
 }
 
 /* Aside */
