@@ -29,6 +29,16 @@
 
 }
 
+.elgg-image-block .elgg-image .elgg-avatar-small{
+	border-radius:50%;
+	overflow:hidden;
+}
+
+.elgg-avatar-tiny{
+	border-radius:50%;
+	overflow:hidden;
+}
+
 .elgg-item-object-event .elgg-image-block .elgg-image {
 	border-radius:50%;
 	overflow:hidden;
@@ -67,7 +77,6 @@
 }
 
 .elgg-main > ul.elgg-list {
-	background:blue;
 	margin-right:10px;
 }
 
